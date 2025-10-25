@@ -1,0 +1,10 @@
+<wpml-config>
+	<custom-types>
+		<custom-type translate="1">portfolio</custom-type>
+		<custom-type translate="1">product</custom-type>
+	</custom-types>
+	<taxonomies>
+		<taxonomy translate="1">portfolio-cat</taxonomy>
+		<taxonomy translate="1">product_cat</taxonomy>
+	</taxonomies>
+</wpml-config>
