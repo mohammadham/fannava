@@ -1,0 +1,519 @@
+/**
+ * Fannava Core Plugin - RTL Styles
+ * استایل‌های راست‌چین برای پلاگین فناوا
+ * Version: 1.0.0
+ */
+
+/* ==========================================================================
+   1. تنظیمات کلی و فونت
+   ========================================================================== */
+
+body,
+.elementor-widget-container,
+.elementor-element {
+    direction: rtl;
+    text-align: right;
+    font-family: 'Shabnam', 'IRANSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+* {
+    font-family: 'Shabnam', 'IRANSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   2. Elementor Widgets - عمومی
+   ========================================================================== */
+
+/* تمام ویجت‌ها */
+.elementor-widget {
+    direction: rtl;
+    text-align: right;
+}
+
+/* هدینگ‌ها */
+.elementor-heading-title {
+    text-align: right;
+}
+
+/* دکمه‌ها */
+.elementor-button,
+.te-btn,
+.fannava-btn {
+    direction: rtl;
+}
+
+.elementor-button .elementor-button-icon {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.elementor-button .elementor-button-icon.elementor-align-icon-left {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+.elementor-button .elementor-button-icon.elementor-align-icon-right {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* ==========================================================================
+   3. آیکون‌ها و FontAwesome
+   ========================================================================== */
+
+/* تبدیل جهت آیکون‌های فلش */
+.fa-arrow-right:before {
+    content: "\f060" !important; /* arrow-left */
+}
+
+.fa-arrow-left:before {
+    content: "\f061" !important; /* arrow-right */
+}
+
+.fa-angle-right:before {
+    content: "\f104" !important; /* angle-left */
+}
+
+.fa-angle-left:before {
+    content: "\f105" !important; /* angle-right */
+}
+
+.fa-chevron-right:before {
+    content: "\f053" !important; /* chevron-left */
+}
+
+.fa-chevron-left:before {
+    content: "\f054" !important; /* chevron-right */
+}
+
+/* آیکون‌ها در کنار متن */
+i + span,
+i + a,
+i + p {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+span + i,
+a + i,
+p + i {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* ==========================================================================
+   4. Hero Banner
+   ========================================================================== */
+
+.hero-banner {
+    direction: rtl;
+    text-align: right;
+}
+
+.hero-banner .banner-content {
+    text-align: right;
+}
+
+.hero-banner .banner-btn {
+    margin-right: 0;
+}
+
+/* ==========================================================================
+   5. About Section
+   ========================================================================== */
+
+.about-section {
+    direction: rtl;
+}
+
+.about-left-side,
+.about-right-side {
+    text-align: right;
+}
+
+.about-list li {
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+.about-list li:before {
+    right: 0;
+    left: auto;
+}
+
+/* ==========================================================================
+   6. Services
+   ========================================================================== */
+
+.services-item,
+.service-box {
+    direction: rtl;
+    text-align: right;
+}
+
+.service-icon {
+    margin-right: 0;
+    margin-left: 20px;
+    float: right;
+}
+
+.service-content {
+    text-align: right;
+}
+
+/* ==========================================================================
+   7. Team Members
+   ========================================================================== */
+
+.team-item,
+.team-member {
+    direction: rtl;
+    text-align: center;
+}
+
+.team-social {
+    text-align: center;
+}
+
+.team-social a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* ==========================================================================
+   8. Testimonials
+   ========================================================================== */
+
+.testimonial-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.testimonial-author {
+    text-align: right;
+}
+
+.testimonial-author img {
+    margin-right: 0;
+    margin-left: 20px;
+    float: right;
+}
+
+.testimonial-quote {
+    text-align: right;
+}
+
+/* ==========================================================================
+   9. Process / Timeline
+   ========================================================================== */
+
+.process-item,
+.timeline-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.process-number {
+    margin-right: 0;
+    margin-left: 20px;
+    float: right;
+}
+
+/* ==========================================================================
+   10. Blog Posts
+   ========================================================================== */
+
+.blog-post,
+.post-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.post-meta {
+    text-align: right;
+}
+
+.post-meta span {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+.post-meta span:last-child {
+    margin-left: 0;
+}
+
+.post-author img {
+    margin-right: 0;
+    margin-left: 10px;
+    float: right;
+}
+
+/* ==========================================================================
+   11. Contact Form
+   ========================================================================== */
+
+.contact-form {
+    direction: rtl;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    text-align: right;
+    direction: rtl;
+}
+
+.contact-form label {
+    text-align: right;
+}
+
+/* ==========================================================================
+   12. Portfolio / Gallery
+   ========================================================================== */
+
+.portfolio-item,
+.gallery-item {
+    direction: rtl;
+}
+
+.portfolio-content {
+    text-align: right;
+}
+
+.portfolio-filter {
+    text-align: center;
+}
+
+.portfolio-filter li {
+    margin: 0 5px;
+}
+
+/* ==========================================================================
+   13. FAQ
+   ========================================================================== */
+
+.faq-item,
+.accordion-item {
+    direction: rtl;
+    text-align: right;
+}
+
+.faq-question,
+.accordion-title {
+    text-align: right;
+}
+
+.faq-icon,
+.accordion-icon {
+    float: left;
+    margin-left: 0;
+    margin-right: 15px;
+}
+
+/* ==========================================================================
+   14. Counter
+   ========================================================================== */
+
+.counter-item {
+    direction: rtl;
+    text-align: center;
+}
+
+.counter-number {
+    direction: ltr;
+}
+
+/* ==========================================================================
+   15. Newsletter
+   ========================================================================== */
+
+.newsletter-form {
+    direction: rtl;
+}
+
+.newsletter-form input {
+    text-align: right;
+    direction: rtl;
+    padding-right: 20px;
+    padding-left: 120px;
+}
+
+.newsletter-form button {
+    right: auto;
+    left: 5px;
+}
+
+/* ==========================================================================
+   16. Breadcrumb
+   ========================================================================== */
+
+.breadcrumb {
+    direction: rtl;
+    text-align: right;
+}
+
+.breadcrumb li {
+    float: right;
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.breadcrumb li:after {
+    margin-right: 5px;
+    margin-left: 0;
+    content: "\\" !important;
+}
+
+/* ==========================================================================
+   17. Pagination
+   ========================================================================== */
+
+.pagination {
+    direction: rtl;
+}
+
+.pagination li {
+    margin-right: 0;
+    margin-left: 5px;
+}
+
+.pagination .prev {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.pagination .next {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* ==========================================================================
+   18. Sliders و Carousels
+   ========================================================================== */
+
+/* Slick Slider */
+.slick-slider {
+    direction: rtl;
+}
+
+.slick-prev {
+    right: auto;
+    left: 10px;
+}
+
+.slick-next {
+    left: auto;
+    right: 10px;
+}
+
+.slick-prev:before {
+    content: "←";
+}
+
+.slick-next:before {
+    content: "→";
+}
+
+/* ==========================================================================
+   19. Margins و Paddings - RTL
+   ========================================================================== */
+
+/* معکوس کردن margin */
+.mr-10 { margin-left: 10px !important; margin-right: 0 !important; }
+.mr-15 { margin-left: 15px !important; margin-right: 0 !important; }
+.mr-20 { margin-left: 20px !important; margin-right: 0 !important; }
+.mr-25 { margin-left: 25px !important; margin-right: 0 !important; }
+.mr-30 { margin-left: 30px !important; margin-right: 0 !important; }
+
+.ml-10 { margin-right: 10px !important; margin-left: 0 !important; }
+.ml-15 { margin-right: 15px !important; margin-left: 0 !important; }
+.ml-20 { margin-right: 20px !important; margin-left: 0 !important; }
+.ml-25 { margin-right: 25px !important; margin-left: 0 !important; }
+.ml-30 { margin-right: 30px !important; margin-left: 0 !important; }
+
+/* معکوس کردن padding */
+.pr-10 { padding-left: 10px !important; padding-right: 0 !important; }
+.pr-15 { padding-left: 15px !important; padding-right: 0 !important; }
+.pr-20 { padding-left: 20px !important; padding-right: 0 !important; }
+.pr-25 { padding-left: 25px !important; padding-right: 0 !important; }
+.pr-30 { padding-left: 30px !important; padding-right: 0 !important; }
+
+.pl-10 { padding-right: 10px !important; padding-left: 0 !important; }
+.pl-15 { padding-right: 15px !important; padding-left: 0 !important; }
+.pl-20 { padding-right: 20px !important; padding-left: 0 !important; }
+.pl-25 { padding-right: 25px !important; padding-left: 0 !important; }
+.pl-30 { padding-right: 30px !important; padding-left: 0 !important; }
+
+/* معکوس کردن float */
+.float-left { float: right !important; }
+.float-right { float: left !important; }
+
+/* معکوس کردن text-align */
+.text-left { text-align: right !important; }
+.text-right { text-align: left !important; }
+
+/* ==========================================================================
+   20. Elementor Editor
+   ========================================================================== */
+
+.elementor-editor-active .elementor-element {
+    direction: rtl;
+}
+
+/* ==========================================================================
+   21. Widget-specific Fixes
+   ========================================================================== */
+
+/* Company Benefits */
+.company-benefit-item {
+    direction: rtl;
+    text-align: right;
+}
+
+/* CTA */
+.cta-section {
+    direction: rtl;
+    text-align: center;
+}
+
+/* Details Pages */
+.service-details,
+.project-details,
+.team-details {
+    direction: rtl;
+    text-align: right;
+}
+
+/* ==========================================================================
+   22. اصلاحات نهایی
+   ========================================================================== */
+
+/* حذف فضای اضافی */
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* اطمینان از راست‌چین بودن همه متن‌ها */
+p, h1, h2, h3, h4, h5, h6, span, div, a, li, td, th {
+    direction: rtl;
+    text-align: right;
+}
+
+/* استثناها */
+.text-center,
+.elementor-align-center {
+    text-align: center !important;
+}
+
+.ltr {
+    direction: ltr !important;
+    text-align: left !important;
+}
+
+/* اعداد و کدها */
+code, pre, .counter-number, .price {
+    direction: ltr;
+    display: inline-block;
+}

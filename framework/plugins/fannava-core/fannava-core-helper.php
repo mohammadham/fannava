@@ -92,8 +92,25 @@ final class Fannava_Core {
 	 */
 	public function __construct() {
 
+		// Load text domain
+		add_action( 'plugins_loaded', array( $this, 'load_textdomain' ) );
+		
 		// Init Plugin
 		add_action( 'plugins_loaded', array( $this, 'init' ) );
+	}
+	
+	/**
+	 * Load plugin textdomain for translations
+	 *
+	 * @since 1.0.0
+	 * @access public
+	 */
+	public function load_textdomain() {
+		load_plugin_textdomain( 
+			'fannavacore', 
+			false, 
+			dirname( plugin_basename( __FILE__ ) ) . '/languages/' 
+		);
 	}
 
 	/**
@@ -205,6 +222,49 @@ final class Fannava_Core {
 		printf( '<div class="notice notice-warning is-dismissible"><p>%1$s</p></div>', $message );
 	}
 }
+
+/**
+ * Enqueue Fannava Core Styles (RTL & Persian Font)
+ */
+function fannava_core_enqueue_styles() {
+    // فونت شبنم
+    wp_enqueue_style( 
+        'fannava-shabnam-font', 
+        FANNAVA_ADDONS_URL . 'assets/css/shabnam-font.css', 
+        array(), 
+        '1.0.0' 
+    );
+    
+    // استایل‌های RTL
+    wp_enqueue_style( 
+        'fannava-core-rtl', 
+        FANNAVA_ADDONS_URL . 'assets/css/fannava-rtl.css', 
+        array('fannava-shabnam-font'), 
+        '1.0.0' 
+    );
+}
+add_action( 'wp_enqueue_scripts', 'fannava_core_enqueue_styles' );
+add_action( 'elementor/frontend/after_enqueue_styles', 'fannava_core_enqueue_styles' );
+
+/**
+ * Enqueue Elementor Editor Styles
+ */
+function fannava_core_editor_styles() {
+    wp_enqueue_style( 
+        'fannava-shabnam-font-editor', 
+        FANNAVA_ADDONS_URL . 'assets/css/shabnam-font.css', 
+        array(), 
+        '1.0.0' 
+    );
+    
+    wp_enqueue_style( 
+        'fannava-core-rtl-editor', 
+        FANNAVA_ADDONS_URL . 'assets/css/fannava-rtl.css', 
+        array(), 
+        '1.0.0' 
+    );
+}
+add_action( 'elementor/editor/after_enqueue_styles', 'fannava_core_editor_styles' );
 
 // Instantiate Fannava_Core.
 new Fannava_Core();

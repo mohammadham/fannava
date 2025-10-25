@@ -11,6 +11,55 @@ class Fannava_OCDI_Demo_Importer {
         add_filter( 'pt-ocdi/after_import', [$this, 'ocdi_after_import_setup'] );
         add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );
         add_action( 'init', [$this, 'fannava_ocdi_rewrite_flush'] );
+        
+        // Add filter for local assets
+        add_filter( 'wp_get_attachment_url', [$this, 'convert_demo_urls_to_local'], 10, 2 );
+        add_filter( 'wp_calculate_image_srcset', [$this, 'fix_srcset_for_local_assets'], 10, 5 );
+    }
+    
+    /**
+     * Convert demo URLs to local asset URLs
+     */
+    public function convert_demo_urls_to_local( $url, $attachment_id ) {
+        // اگر URL از دامنه‌های demo است، به local تبدیل کن
+        $demo_domains = array(
+            'https://ekobyte.themeearth.com',
+            'http://ekobyte.themeearth.com',
+            'https://fannava.local',
+            'http://fannava.local',
+        );
+        
+        foreach ( $demo_domains as $domain ) {
+            if ( strpos( $url, $domain ) !== false ) {
+                // استخراج مسیر فایل
+                $path = str_replace( $domain . '/wp-content/', '', $url );
+                // ساخت URL لوکال
+                $local_url = FANNAVA_ADDONS_URL . 'admin/demo-data/local-assets/' . $path;
+                
+                // بررسی وجود فایل
+                $local_path = FANNAVA_ADDONS_PATH . 'admin/demo-data/local-assets/' . $path;
+                if ( file_exists( $local_path ) ) {
+                    return $local_url;
+                }
+            }
+        }
+        
+        return $url;
+    }
+    
+    /**
+     * Fix srcset for local assets
+     */
+    public function fix_srcset_for_local_assets( $sources, $size_array, $image_src, $image_meta, $attachment_id ) {
+        if ( empty( $sources ) ) {
+            return $sources;
+        }
+        
+        foreach ( $sources as $width => $source ) {
+            $sources[$width]['url'] = $this->convert_demo_urls_to_local( $source['url'], $attachment_id );
+        }
+        
+        return $sources;
     }
 
     public function import_files_config() {
@@ -20,13 +69,13 @@ class Fannava_OCDI_Demo_Importer {
 				'title' => __( 'Home 1', 'fannavacore' ),
 				'page'  => __( 'home-1', 'fannavacore' ),
 				'screenshot' => plugins_url( 'assets/img/demo/home-1.jpg', dirname(__FILE__) ),
-				'preview_link' => 'https://ekobyte.themeearth.com/',
+				'preview_link' => 'https://fannava.themeearth.com/',
 			),
 			'fannava_demo_home_2' => array(
 				'title' => __( 'Home 2', 'fannavacore' ),
 				'page'  => __( 'home-2', 'fannavacore' ),
 				'screenshot' => plugins_url( 'assets/img/demo/home-2.jpg', dirname(__FILE__) ),
-				'preview_link' => 'https://ekobyte.themeearth.com/home-2/',
+				'preview_link' => 'https://fannava.themeearth.com/home-2/',
 			),
 		);
 

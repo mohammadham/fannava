@@ -1,0 +1,643 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fannava Core 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-25 12:00+0000\n"
+"PO-Revision-Date: 2024-10-25 12:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Manual\n"
+
+# Plugin Name
+msgid "Fannava Core"
+msgstr "هسته فناوا"
+
+msgid "Fannava core plugin."
+msgstr "افزونه هسته فناوا"
+
+# Requirements
+msgid "\"%1$s\" requires \"%2$s\" to be installed and activated."
+msgstr "\"%1$s\" نیاز به نصب و فعال‌سازی \"%2$s\" دارد."
+
+msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
+msgstr "\"%1$s\" نیاز به \"%2$s\" نسخه %3$s یا بالاتر دارد."
+
+msgid "Elementor"
+msgstr "المنتور"
+
+msgid "PHP"
+msgstr "پی‌اچ‌پی"
+
+# Elementor Category
+msgid "Element Helper ( Fannava )"
+msgstr "عناصر کمکی (فناوا)"
+
+msgid "Fannava - Feather Icons"
+msgstr "فناوا - آیکون‌های Feather"
+
+msgid "Fannava - Custom Icons"
+msgstr "فناوا - آیکون‌های سفارشی"
+
+msgid "Fannava - Fontawesome Pro Light"
+msgstr "فناوا - فونت‌اوسام پرو"
+
+# General Terms
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Title"
+msgstr "عنوان"
+
+msgid "Content"
+msgstr "محتوا"
+
+msgid "Show"
+msgstr "نمایش"
+
+msgid "Hide"
+msgstr "مخفی"
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "No"
+msgstr "خیر"
+
+msgid "Enable"
+msgstr "فعال"
+
+msgid "Disable"
+msgstr "غیرفعال"
+
+# Design & Layout
+msgid "Design Layout"
+msgstr "طراحی چیدمان"
+
+msgid "Select Layout"
+msgstr "انتخاب چیدمان"
+
+msgid "Layout 1"
+msgstr "چیدمان ۱"
+
+msgid "Layout 2"
+msgstr "چیدمان ۲"
+
+msgid "Layout 3"
+msgstr "چیدمان ۳"
+
+msgid "Style"
+msgstr "سبک"
+
+msgid "Color"
+msgstr "رنگ"
+
+msgid "Background Color"
+msgstr "رنگ پس‌زمینه"
+
+msgid "Typography"
+msgstr "تایپوگرافی"
+
+# Widgets
+msgid "About Us"
+msgstr "درباره ما"
+
+msgid "Services"
+msgstr "خدمات"
+
+msgid "Team"
+msgstr "تیم"
+
+msgid "Team Members"
+msgstr "اعضای تیم"
+
+msgid "Testimonial"
+msgstr "نظرات"
+
+msgid "Testimonials"
+msgstr "نظرات مشتریان"
+
+msgid "Blog"
+msgstr "وبلاگ"
+
+msgid "Blog Post"
+msgstr "نوشته وبلاگ"
+
+msgid "Contact"
+msgstr "تماس"
+
+msgid "Contact Form"
+msgstr "فرم تماس"
+
+msgid "Portfolio"
+msgstr "نمونه کارها"
+
+msgid "Gallery"
+msgstr "گالری"
+
+msgid "FAQ"
+msgstr "سوالات متداول"
+
+msgid "Counter"
+msgstr "شمارنده"
+
+msgid "Process"
+msgstr "فرآیند"
+
+msgid "Hero Banner"
+msgstr "بنر اصلی"
+
+msgid "Newsletter"
+msgstr "خبرنامه"
+
+msgid "CTA"
+msgstr "فراخوان"
+
+msgid "Call to Action"
+msgstr "فراخوان اقدام"
+
+# Content Sections
+msgid "Title & Content"
+msgstr "عنوان و محتوا"
+
+msgid "Section Title & Content"
+msgstr "عنوان و محتوای بخش"
+
+msgid "Sub Title"
+msgstr "زیرعنوان"
+
+msgid "Type sub title"
+msgstr "زیرعنوان را وارد کنید"
+
+msgid "Main Title"
+msgstr "عنوان اصلی"
+
+msgid "Type title here"
+msgstr "عنوان را اینجا وارد کنید"
+
+msgid "Description"
+msgstr "توضیحات"
+
+msgid "Type description"
+msgstr "توضیحات را وارد کنید"
+
+# Images
+msgid "Image"
+msgstr "تصویر"
+
+msgid "Choose Image"
+msgstr "انتخاب تصویر"
+
+msgid "Upload Image"
+msgstr "آپلود تصویر"
+
+msgid "Background Image"
+msgstr "تصویر پس‌زمینه"
+
+msgid "Featured Image"
+msgstr "تصویر شاخص"
+
+# Buttons
+msgid "Button"
+msgstr "دکمه"
+
+msgid "Button Text"
+msgstr "متن دکمه"
+
+msgid "Button Link"
+msgstr "لینک دکمه"
+
+msgid "Button Style"
+msgstr "سبک دکمه"
+
+msgid "Read More"
+msgstr "ادامه مطلب"
+
+msgid "Learn More"
+msgstr "اطلاعات بیشتر"
+
+msgid "Get Started"
+msgstr "شروع کنید"
+
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+msgid "View More"
+msgstr "مشاهده بیشتر"
+
+# Form Fields
+msgid "Name"
+msgstr "نام"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Phone"
+msgstr "تلفن"
+
+msgid "Message"
+msgstr "پیام"
+
+msgid "Subject"
+msgstr "موضوع"
+
+msgid "Your Name"
+msgstr "نام شما"
+
+msgid "Your Email"
+msgstr "ایمیل شما"
+
+msgid "Your Phone"
+msgstr "تلفن شما"
+
+msgid "Your Message"
+msgstr "پیام شما"
+
+msgid "Send Message"
+msgstr "ارسال پیام"
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "Subscribe"
+msgstr "اشتراک"
+
+# Social Media
+msgid "Social Media"
+msgstr "شبکه‌های اجتماعی"
+
+msgid "Social Links"
+msgstr "لینک‌های اجتماعی"
+
+msgid "Facebook"
+msgstr "فیسبوک"
+
+msgid "Twitter"
+msgstr "توییتر"
+
+msgid "Instagram"
+msgstr "اینستاگرام"
+
+msgid "LinkedIn"
+msgstr "لینکدین"
+
+msgid "Pinterest"
+msgstr "پینترست"
+
+msgid "YouTube"
+msgstr "یوتیوب"
+
+# Post Meta
+msgid "By"
+msgstr "توسط"
+
+msgid "Posted by"
+msgstr "نوشته شده توسط"
+
+msgid "Date"
+msgstr "تاریخ"
+
+msgid "Category"
+msgstr "دسته‌بندی"
+
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+msgid "Comments"
+msgstr "نظرات"
+
+msgid "Read Time"
+msgstr "زمان مطالعه"
+
+msgid "Author"
+msgstr "نویسنده"
+
+# Team
+msgid "Position"
+msgstr "موقعیت"
+
+msgid "Member Name"
+msgstr "نام عضو"
+
+msgid "Member Position"
+msgstr "موقعیت عضو"
+
+msgid "Member Bio"
+msgstr "بیوگرافی عضو"
+
+# Service
+msgid "Service Title"
+msgstr "عنوان خدمت"
+
+msgid "Service Description"
+msgstr "توضیحات خدمت"
+
+msgid "Service Icon"
+msgstr "آیکون خدمت"
+
+msgid "Service Details"
+msgstr "جزئیات خدمت"
+
+# Project/Portfolio
+msgid "Project"
+msgstr "پروژه"
+
+msgid "Project Title"
+msgstr "عنوان پروژه"
+
+msgid "Project Details"
+msgstr "جزئیات پروژه"
+
+msgid "Project Category"
+msgstr "دسته پروژه"
+
+msgid "Client"
+msgstr "مشتری"
+
+msgid "Duration"
+msgstr "مدت زمان"
+
+msgid "Location"
+msgstr "مکان"
+
+# Testimonial
+msgid "Client Name"
+msgstr "نام مشتری"
+
+msgid "Client Position"
+msgstr "موقعیت مشتری"
+
+msgid "Client Company"
+msgstr "شرکت مشتری"
+
+msgid "Review"
+msgstr "نقد"
+
+msgid "Rating"
+msgstr "امتیاز"
+
+# Counter
+msgid "Number"
+msgstr "عدد"
+
+msgid "Counter Number"
+msgstr "عدد شمارنده"
+
+msgid "Counter Title"
+msgstr "عنوان شمارنده"
+
+msgid "Suffix"
+msgstr "پسوند"
+
+msgid "Prefix"
+msgstr "پیشوند"
+
+# Process/Timeline
+msgid "Step"
+msgstr "گام"
+
+msgid "Step Title"
+msgstr "عنوان گام"
+
+msgid "Step Number"
+msgstr "شماره گام"
+
+msgid "Step Description"
+msgstr "توضیحات گام"
+
+# FAQ
+msgid "Question"
+msgstr "سوال"
+
+msgid "Answer"
+msgstr "پاسخ"
+
+msgid "FAQ Title"
+msgstr "عنوان سوال"
+
+msgid "FAQ Content"
+msgstr "محتوای پاسخ"
+
+# Newsletter
+msgid "Subscribe to Newsletter"
+msgstr "اشتراک در خبرنامه"
+
+msgid "Enter your email"
+msgstr "ایمیل خود را وارد کنید"
+
+msgid "Subscribe Now"
+msgstr "اشترک الان"
+
+# Company Benefits
+msgid "Company Benefit"
+msgstr "مزایای شرکت"
+
+msgid "Benefit Title"
+msgstr "عنوان مزیت"
+
+msgid "Benefit Description"
+msgstr "توضیحات مزیت"
+
+# Call to Action
+msgid "CTA Title"
+msgstr "عنوان فراخوان"
+
+msgid "CTA Description"
+msgstr "توضیحات فراخوان"
+
+msgid "CTA Button"
+msgstr "دکمه فراخوان"
+
+# Alignment
+msgid "Alignment"
+msgstr "تراز"
+
+msgid "Left"
+msgstr "چپ"
+
+msgid "Center"
+msgstr "وسط"
+
+msgid "Right"
+msgstr "راست"
+
+msgid "Justify"
+msgstr "تراز دو طرفه"
+
+# Spacing
+msgid "Margin"
+msgstr "فاصله خارجی"
+
+msgid "Padding"
+msgstr "فاصله داخلی"
+
+msgid "Top"
+msgstr "بالا"
+
+msgid "Bottom"
+msgstr "پایین"
+
+msgid "Left"
+msgstr "چپ"
+
+msgid "Right"
+msgstr "راست"
+
+# Border
+msgid "Border"
+msgstr "حاشیه"
+
+msgid "Border Radius"
+msgstr "گردی حاشیه"
+
+msgid "Border Color"
+msgstr "رنگ حاشیه"
+
+msgid "Border Width"
+msgstr "ضخامت حاشیه"
+
+# Animation
+msgid "Animation"
+msgstr "انیمیشن"
+
+msgid "Entrance Animation"
+msgstr "انیمیشن ورود"
+
+msgid "Hover Animation"
+msgstr "انیمیشن هاور"
+
+# Size
+msgid "Width"
+msgstr "عرض"
+
+msgid "Height"
+msgstr "ارتفاع"
+
+msgid "Size"
+msgstr "اندازه"
+
+msgid "Small"
+msgstr "کوچک"
+
+msgid "Medium"
+msgstr "متوسط"
+
+msgid "Large"
+msgstr "بزرگ"
+
+# Visibility
+msgid "Visibility"
+msgstr "نمایش"
+
+msgid "Visible"
+msgstr "قابل مشاهده"
+
+msgid "Hidden"
+msgstr "مخفی"
+
+# Custom Post Types
+msgid "Portfolio"
+msgstr "نمونه کارها"
+
+msgid "All Portfolios"
+msgstr "تمام نمونه کارها"
+
+msgid "Add New Portfolio"
+msgstr "افزودن نمونه کار جدید"
+
+msgid "Edit Portfolio"
+msgstr "ویرایش نمونه کار"
+
+msgid "View Portfolio"
+msgstr "مشاهده نمونه کار"
+
+msgid "Search Portfolio"
+msgstr "جستجوی نمونه کار"
+
+# Sidebar Widgets
+msgid "Recent Posts"
+msgstr "نوشته‌های اخیر"
+
+msgid "Popular Posts"
+msgstr "نوشته‌های محبوب"
+
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+msgid "Search"
+msgstr "جستجو"
+
+# Demo Import
+msgid "Import Demo"
+msgstr "وارد کردن دمو"
+
+msgid "Demo Import"
+msgstr "وارد کننده دمو"
+
+msgid "Import"
+msgstr "وارد کردن"
+
+msgid "Demo Content"
+msgstr "محتوای دمو"
+
+# Misc
+msgid "All"
+msgstr "همه"
+
+msgid "Select"
+msgstr "انتخاب"
+
+msgid "Choose"
+msgstr "انتخاب کنید"
+
+msgid "Upload"
+msgstr "آپلود"
+
+msgid "Remove"
+msgstr "حذف"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Open"
+msgstr "باز کردن"
+
+msgid "Add"
+msgstr "افزودن"
+
+msgid "Add New"
+msgstr "افزودن جدید"
+
+msgid "Update"
+msgstr "به‌روزرسانی"
+
+msgid "None"
+msgstr "هیچ‌کدام"
+
+msgid "Default"
+msgstr "پیش‌فرض"
+
+msgid "Custom"
+msgstr "سفارشی"
