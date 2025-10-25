@@ -19,7 +19,7 @@ msgid "Fannava"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "https://fannava.themeearth.com/"
+msgid "https://ekobyte.themeearth.com/"
 msgstr ""
 
 #. Description of the theme
@@ -784,7 +784,7 @@ msgid "Mail ID"
 msgstr ""
 
 #: inc/kirki-customizer.php:187
-msgid "info@fannava.com"
+msgid "info@fannava.ir"
 msgstr ""
 
 #: inc/kirki-customizer.php:202
@@ -981,7 +981,7 @@ msgid "Copyright"
 msgstr ""
 
 #: inc/kirki-customizer.php:628
-msgid "Copyright &copy; 2023 Fannava. All Rights Reserved"
+msgid "Copyright &copy; 2025 Fannava. All Rights Reserved"
 msgstr ""
 
 #: inc/kirki-customizer.php:641

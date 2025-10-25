@@ -371,7 +371,7 @@ function ocdi_register_plugins( $plugins ) {
             'required' => false,
         ],
         array(
-            'name'     =>  esc_html__('فریمورک شخصی‌سازی کرکی','fannava'),
+            'name'     =>  esc_html__('فریمورک شخصی‌سازی Kirki','fannava'),
             'slug'     => 'kirki',
             'required' => true,
         ), 

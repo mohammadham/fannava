@@ -162,7 +162,7 @@ function _fannava_header_settings_fields( $fields ) {
         'settings' => 'fannava_mail_id',
         'label'    => esc_html__( 'Mail ID', 'fannava' ),
         'section'  => 'header_setting',
-        'default'  => esc_html__( 'info@fannava.com', 'fannava' ),
+        'default'  => esc_html__( 'info@fannava.ir', 'fannava' ),
         'priority' => 10,
         'active_callback' => [
             [
@@ -599,7 +599,7 @@ function _fannava_footer_fields( $fields ) {
         'settings' => 'fannava_copyright',
         'label'    => esc_html__( 'Copyright', 'fannava' ),
         'section'  => 'footer_setting',
-        'default'  => esc_html__( 'Copyright &copy; 2024 Fannava. All Rights Reserved', 'fannava' ),
+        'default'  => esc_html__( 'Copyright &copy; 2025 Fannava. All Rights Reserved', 'fannava' ),
         'priority' => 10,
     ];
 

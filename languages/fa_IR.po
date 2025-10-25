@@ -65,7 +65,7 @@ msgstr "نصب دمو با یک کلیک"
 
 #: functions.php:374
 msgid "Kirki Customizer Framework"
-msgstr "فریمورک شخصی‌سازی کرکی"
+msgstr "فریمورک شخصی‌سازی Kirki"
 
 #: functions.php:379
 msgid "Breadcrumb NavXT"
