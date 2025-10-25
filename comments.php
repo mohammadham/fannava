@@ -23,7 +23,7 @@ if ( post_password_required() ) {
 
                 <?php
                     $comment_no = number_format_i18n( get_comments_number() );
-                    $comment_text = ( !empty( $comment_no ) AND ( $comment_no > 1 ) ) ? esc_html__( ' Comments Found', 'ekobyte' ) : esc_html__( ' Comment Found', 'ekobyte' );
+                    $comment_text = ( !empty( $comment_no ) AND ( $comment_no > 1 ) ) ? esc_html__( ' Comments Found', 'fannava' ) : esc_html__( ' Comment Found', 'fannava' );
                     $comment_no = ( !empty( $comment_no ) AND ( $comment_no > 0 ) ) ? '<h2>' . esc_html( $comment_no . $comment_text ) . '</h2>' : ' ';
                     print sprintf( "%s", $comment_no );
                 ?>
@@ -34,7 +34,7 @@ if ( post_password_required() ) {
                     <?php
                         wp_list_comments( [
                             'style'       => 'ul',
-                            'callback'    => 'ekobyte_comment',
+                            'callback'    => 'fannava_comment',
                             'avatar_size' => 90,
                             'short_ping'  => true,
                         ] );
@@ -50,13 +50,13 @@ if ( post_password_required() ) {
     <?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ): ?>
         <div class="comment-pagination mb-50 d-none">
             <nav id="comment-nav-below" class="comment-navigation" role="navigation">
-                <h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'ekobyte' );?></h1>
+                <h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'fannava' );?></h1>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="nav-previous "><?php previous_comments_link( esc_html__( '&larr; Older ', 'ekobyte' ) );?></div>
+                        <div class="nav-previous "><?php previous_comments_link( esc_html__( '&larr; Older ', 'fannava' ) );?></div>
                     </div>
                     <div class="col-md-6">
-                        <div class="nav-next "><?php next_comments_link( esc_html__( 'Newer &rarr;', 'ekobyte' ) );?></div>
+                        <div class="nav-next "><?php next_comments_link( esc_html__( 'Newer &rarr;', 'fannava' ) );?></div>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -84,9 +84,9 @@ if ( post_password_required() ) {
             $aria_req    = ( $req ? " aria-required='true'" : '' );
 
             $fields = array(
-                'author' => '<div class="row gx-4"><div class="col-xl-4"><div class="te-contacts-name"><input placeholder="'.  esc_attr__('Enter Name', 'ekobyte').'" id="author" name="author" type="text" value="' . esc_attr( $commenter[ 'comment_author' ] ) . '" ' . $aria_req . ' /></div></div>',
-                'email'  => '<div class="col-xl-4"><div class="te-contacts-email"><input placeholder="'.  esc_attr__('Enter Email', 'ekobyte').'" id="email" name="email" type="email" value="' . esc_attr( $commenter[ 'comment_author_email' ] ) . '"' . $aria_req . ' /></div></div>',
-                'url'    => '<div class="col-xl-4"><div class="te-contacts-name"><input placeholder="'.  esc_attr__('Enter Website', 'ekobyte').'" id="url" name="url" type="url" value="' . esc_attr( $commenter[ 'comment_author_url' ] ) . '" /></div></div></div>'
+                'author' => '<div class="row gx-4"><div class="col-xl-4"><div class="te-contacts-name"><input placeholder="'.  esc_attr__('Enter Name', 'fannava').'" id="author" name="author" type="text" value="' . esc_attr( $commenter[ 'comment_author' ] ) . '" ' . $aria_req . ' /></div></div>',
+                'email'  => '<div class="col-xl-4"><div class="te-contacts-email"><input placeholder="'.  esc_attr__('Enter Email', 'fannava').'" id="email" name="email" type="email" value="' . esc_attr( $commenter[ 'comment_author_email' ] ) . '"' . $aria_req . ' /></div></div>',
+                'url'    => '<div class="col-xl-4"><div class="te-contacts-name"><input placeholder="'.  esc_attr__('Enter Website', 'fannava').'" id="url" name="url" type="url" value="' . esc_attr( $commenter[ 'comment_author_url' ] ) . '" /></div></div></div>'
             );
 
             if ( is_user_logged_in() ) {
@@ -99,28 +99,28 @@ if ( post_password_required() ) {
                 'comment_field'      => '
                     <div class="row gx-4">
                         <div class="col-xl-12 ' . $cl . '">
-                        <div class="te-contacts-message"><textarea placeholder="'.  esc_attr__('Enter Your Comments', 'ekobyte').'" id="comment" name="comment" cols="20" rows="3" aria-required="true"></textarea></div>
+                        <div class="te-contacts-message"><textarea placeholder="'.  esc_attr__('Enter Your Comments', 'fannava').'" id="comment" name="comment" cols="20" rows="3" aria-required="true"></textarea></div>
                         </div>
                     </div>
                 ',
-                'submit_button'    => '<div class="col-12"><button class="te-theme-btn" type="submit">' . esc_html__( 'Post Comment', 'ekobyte' ) . ' <i class="fa-solid fa-arrow-right"></i></button></div>',
+                'submit_button'    => '<div class="col-12"><button class="te-theme-btn" type="submit">' . esc_html__( 'Post Comment', 'fannava' ) . ' <i class="fa-solid fa-arrow-right"></i></button></div>',
                 /** This filter is documented in wp-includes/link-template.php */
                 'must_log_in'        => '
                     <p class="must-log-in">
-                    '.esc_html__('You must be','ekobyte').' <a href="'.esc_url(wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'">'.esc_html__('logged in','ekobyte').'</a> '.esc_html__('to post a comment.','ekobyte').'
+                    '.esc_html__('You must be','fannava').' <a href="'.esc_url(wp_login_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'">'.esc_html__('logged in','fannava').'</a> '.esc_html__('to post a comment.','fannava').'
                     </p>',
                 /** This filter is documented in wp-includes/link-template.php */
                 'logged_in_as'       => '
                     <p class="logged-in-as">
-                    '.esc_html__('Logged in as','ekobyte').' <a href="'.esc_url(get_edit_user_link()).'">'.esc_html($user_identity).'</a>. <a href="'.esc_url(wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'" title="'.esc_attr__('Log out of this account','ekobyte').'">'.esc_html__('Log out?','ekobyte').'</a>
+                    '.esc_html__('Logged in as','fannava').' <a href="'.esc_url(get_edit_user_link()).'">'.esc_html($user_identity).'</a>. <a href="'.esc_url(wp_logout_url( apply_filters( 'the_permalink', get_permalink( $post_id ) ) )).'" title="'.esc_attr__('Log out of this account','fannava').'">'.esc_html__('Log out?','fannava').'</a>
                     </p>',
                 'id_form'            => 'commentform',
                 'id_submit'          => 'submit',
                 'class_submit'       => 'te-theme-btn',
-                'title_reply'        => esc_html__( 'Add a Comment', 'ekobyte' ),
-                'title_reply_to'     => esc_html__( 'Leave a Reply to %s', 'ekobyte' ),
-                'cancel_reply_link'  => esc_html__( '   Cancel reply', 'ekobyte' ),
-                'label_submit'       => esc_html__( 'Post Comment', 'ekobyte' ),
+                'title_reply'        => esc_html__( 'Add a Comment', 'fannava' ),
+                'title_reply_to'     => esc_html__( 'Leave a Reply to %s', 'fannava' ),
+                'cancel_reply_link'  => esc_html__( '   Cancel reply', 'fannava' ),
+                'label_submit'       => esc_html__( 'Post Comment', 'fannava' ),
                 'format'             => 'xhtml',
             ];
 

@@ -7,10 +7,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ekobyte
+ * @package fannava
  */
 
-do_action( 'ekobyte_footer_style' );
+do_action( 'fannava_footer_style' );
 
 wp_footer();?>
     </body>

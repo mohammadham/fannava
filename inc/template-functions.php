@@ -2,7 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
- * @package ekobyte
+ * @package fannava
  */
 
 /**
@@ -11,7 +11,7 @@
  * @param array $classes Classes for the body element.
  * @return array
  */
-function ekobyte_body_classes( $classes ) {
+function fannava_body_classes( $classes ) {
     // Adds a class of hfeed to non-singular pages.
     if ( !is_singular() ) {
         $classes[] = 'hfeed';
@@ -27,15 +27,15 @@ function ekobyte_body_classes( $classes ) {
 
     return $classes;
 }
-add_filter( 'body_class', 'ekobyte_body_classes' );
+add_filter( 'body_class', 'fannava_body_classes' );
 
 /**
  * Get tags.
  */
-function ekobyte_get_tag() {
+function fannava_get_tag() {
     $html = '';
     if ( has_tag() ) {
-        $html .= '<div class="te-post-tag-list"><span>' . esc_html__( 'TAGS ', 'ekobyte' ) . '</span>';
+        $html .= '<div class="te-post-tag-list"><span>' . esc_html__( 'TAGS ', 'fannava' ) . '</span>';
         $html .= get_the_tag_list( '', ' ', '' );
         $html .= '</div>';
     }
@@ -46,7 +46,7 @@ function ekobyte_get_tag() {
 /**
  * Get categories.
  */
-function ekobyte_get_category() {
+function fannava_get_category() {
 
     $categories = get_the_category( get_the_ID() );
     $x = 0;
@@ -62,7 +62,7 @@ function ekobyte_get_category() {
 }
 
 /** img alt-text **/
-function ekobyte_img_alt_text( $img_er_id = null ) {
+function fannava_img_alt_text( $img_er_id = null ) {
     $image_id = $img_er_id;
     $image_alt = get_post_meta( $image_id, '_wp_attachment_image_alt', false );
     $image_title = get_the_title( $image_id );
@@ -74,44 +74,44 @@ function ekobyte_img_alt_text( $img_er_id = null ) {
             $alt_text = get_the_title( $image_id );
         }
     } else {
-        $alt_text = esc_html__( 'Image Alt Text', 'ekobyte' );
+        $alt_text = esc_html__( 'Image Alt Text', 'fannava' );
     }
 
     return $alt_text;
 }
 
-// ekobyte_ofer_sidebar_func
-function ekobyte_offer_sidebar_func() {
+// fannava_ofer_sidebar_func
+function fannava_offer_sidebar_func() {
     if ( is_active_sidebar( 'offer-sidebar' ) ) {
 
         dynamic_sidebar( 'offer-sidebar' );
     }
 }
-add_action( 'ekobyte_offer_sidebar', 'ekobyte_offer_sidebar_func', 20 );
+add_action( 'fannava_offer_sidebar', 'fannava_offer_sidebar_func', 20 );
 
-// ekobyte_service_sidebar
-function ekobyte_service_sidebar_func() {
+// fannava_service_sidebar
+function fannava_service_sidebar_func() {
     if ( is_active_sidebar( 'services-sidebar' ) ) {
 
         dynamic_sidebar( 'services-sidebar' );
     }
 }
-add_action( 'ekobyte_service_sidebar', 'ekobyte_service_sidebar_func', 20 );
+add_action( 'fannava_service_sidebar', 'fannava_service_sidebar_func', 20 );
 
-// ekobyte_portfolio_sidebar
-function ekobyte_portfolio_sidebar_func() {
+// fannava_portfolio_sidebar
+function fannava_portfolio_sidebar_func() {
     if ( is_active_sidebar( 'portfolio-sidebar' ) ) {
 
         dynamic_sidebar( 'portfolio-sidebar' );
     }
 }
-add_action( 'ekobyte_portfolio_sidebar', 'ekobyte_portfolio_sidebar_func', 20 );
+add_action( 'fannava_portfolio_sidebar', 'fannava_portfolio_sidebar_func', 20 );
 
-// ekobyte_faq_sidebar
-function ekobyte_faq_sidebar_func() {
+// fannava_faq_sidebar
+function fannava_faq_sidebar_func() {
     if ( is_active_sidebar( 'faq-sidebar' ) ) {
 
         dynamic_sidebar( 'faq-sidebar' );
     }
 }
-add_action( 'ekobyte_faq_sidebar', 'ekobyte_faq_sidebar_func', 20 );
+add_action( 'fannava_faq_sidebar', 'fannava_faq_sidebar_func', 20 );

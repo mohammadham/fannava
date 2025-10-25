@@ -7,7 +7,7 @@
  * @package farmus
  */
 
-$ekobyte_audio_url = function_exists( 'get_field' ) ? get_field( 'audio_or_video_link' ) : NULL;
+$fannava_audio_url = function_exists( 'get_field' ) ? get_field( 'audio_or_video_link' ) : NULL;
 if ( is_single() ): 
 ?>
 
@@ -15,8 +15,8 @@ if ( is_single() ):
     <article id="post-<?php the_ID(); ?>" <?php post_class('te-post-item'); ?>>
     
         <div class="post-audio embed-responsive">
-            <?php if ( !empty( $ekobyte_audio_url ) ): ?>
-                <?php echo wp_oembed_get( $ekobyte_audio_url ); ?>
+            <?php if ( !empty( $fannava_audio_url ) ): ?>
+                <?php echo wp_oembed_get( $fannava_audio_url ); ?>
             <?php endif; ?>
         </div>
 
@@ -30,7 +30,7 @@ if ( is_single() ):
             </div>
             <div class="te-single-post-meta">
                 <div class="te-blog-post-tag">
-                    <?php print ekobyte_get_tag(); ?>
+                    <?php print fannava_get_tag(); ?>
                 </div>
             </div>
         </div>
@@ -40,8 +40,8 @@ if ( is_single() ):
 
     <article id="post-<?php the_ID();?>" <?php post_class( 'te-post-item format-audio' );?>>
         <div class="post-audio embed-responsive">
-            <?php if ( !empty( $ekobyte_audio_url ) ): ?>
-                <?php echo wp_oembed_get( $ekobyte_audio_url ); ?>
+            <?php if ( !empty( $fannava_audio_url ) ): ?>
+                <?php echo wp_oembed_get( $fannava_audio_url ); ?>
             <?php endif; ?>
         </div>
         <div class="te-post-content-wrapper">

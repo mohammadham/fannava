@@ -5,25 +5,25 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
  
-$footer_bg_img = get_theme_mod('ekobyte_footer_bg');
-$ekobyte_footer_bg_url_from_page = function_exists('get_field') ? get_field('ekobyte_footer_bg') : '';
-$ekobyte_footer_bg_color_from_page = function_exists('get_field') ? get_field('ekobyte_footer_bg_color') : '';
+$footer_bg_img = get_theme_mod('fannava_footer_bg');
+$fannava_footer_bg_url_from_page = function_exists('get_field') ? get_field('fannava_footer_bg') : '';
+$fannava_footer_bg_color_from_page = function_exists('get_field') ? get_field('fannava_footer_bg_color') : '';
 
 // bg image
-$bg_img = !empty($ekobyte_footer_bg_url_from_page['url']) ? $ekobyte_footer_bg_url_from_page['url'] : $footer_bg_img;
+$bg_img = !empty($fannava_footer_bg_url_from_page['url']) ? $fannava_footer_bg_url_from_page['url'] : $footer_bg_img;
 
 // social link
-$ekobyte_footer_social_switch = get_theme_mod( '$ekobyte_footer_social_switch', false );
-$ekobyte_footer_social_connect_text = get_theme_mod( 'ekobyte_footer_social_connect_text', __( 'Follow us:', 'ekobyte' ) );
-$ekobyte_footer_fb_url = get_theme_mod( 'ekobyte_fb_url', __( 'https://facebook.com', 'ekobyte' ) );
-$ekobyte_footer_twitter_url = get_theme_mod( 'ekobyte_twitter_url', __( 'https://twitter.com', 'ekobyte' ) );
-$ekobyte_footer_linkedin_url = get_theme_mod( 'ekobyte_linkedin_url', __( 'https://linkedin.com', 'ekobyte' ) );
-$ekobyte_footer_youtube_url = get_theme_mod( 'ekobyte_youtube_url', __( 'https://youtube.com', 'ekobyte' ) );
-$ekobyte_footer_instagram_url = get_theme_mod( 'ekobyte_instagram_url', __( 'https://www.instagram.com/', 'ekobyte' ) );
-$ekobyte_footer_pinterest_url = get_theme_mod( 'ekobyte_pinterest_url', __( 'https://www.pinterest.com/', 'ekobyte' ) );
+$fannava_footer_social_switch = get_theme_mod( '$fannava_footer_social_switch', false );
+$fannava_footer_social_connect_text = get_theme_mod( 'fannava_footer_social_connect_text', __( 'Follow us:', 'fannava' ) );
+$fannava_footer_fb_url = get_theme_mod( 'fannava_fb_url', __( 'https://facebook.com', 'fannava' ) );
+$fannava_footer_twitter_url = get_theme_mod( 'fannava_twitter_url', __( 'https://twitter.com', 'fannava' ) );
+$fannava_footer_linkedin_url = get_theme_mod( 'fannava_linkedin_url', __( 'https://linkedin.com', 'fannava' ) );
+$fannava_footer_youtube_url = get_theme_mod( 'fannava_youtube_url', __( 'https://youtube.com', 'fannava' ) );
+$fannava_footer_instagram_url = get_theme_mod( 'fannava_instagram_url', __( 'https://www.instagram.com/', 'fannava' ) );
+$fannava_footer_pinterest_url = get_theme_mod( 'fannava_pinterest_url', __( 'https://www.pinterest.com/', 'fannava' ) );
 
 ?>
 
@@ -35,32 +35,32 @@ $ekobyte_footer_pinterest_url = get_theme_mod( 'ekobyte_pinterest_url', __( 'htt
                 <div class="col-12">
                     <div class="te-footer-social-wrapper">
                         <div class="te-footer-logo">
-                            <?php ekobyte_footer_logo(); ?>
+                            <?php fannava_footer_logo(); ?>
                         </div>
-                        <?php if ( !empty( $ekobyte_footer_social_switch ) ): ?>
+                        <?php if ( !empty( $fannava_footer_social_switch ) ): ?>
                             <div class="te-social-widget">
-                                <?php if ( !empty( $ekobyte_footer_social_connect_text ) ): ?>
-                                    <span><?php echo esc_html($ekobyte_footer_social_connect_text); ?></span>
+                                <?php if ( !empty( $fannava_footer_social_connect_text ) ): ?>
+                                    <span><?php echo esc_html($fannava_footer_social_connect_text); ?></span>
                                 <?php endif; ?>
                                 <div class="te-social-profile">
-                                    <?php if ( !empty( $ekobyte_footer_fb_url ) OR !empty( $ekobyte_footer_twitter_url ) OR !empty( $ekobyte_footer_linkedin_url ) OR !empty( $ekobyte_footer_youtube_url ) OR !empty( $ekobyte_footer_instagram_url ) OR !empty( $ekobyte_footer_pinterest_url ) ): ?>
-                                        <?php if ( !empty( $ekobyte_footer_fb_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_fb_url); ?>"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <?php if ( !empty( $fannava_footer_fb_url ) OR !empty( $fannava_footer_twitter_url ) OR !empty( $fannava_footer_linkedin_url ) OR !empty( $fannava_footer_youtube_url ) OR !empty( $fannava_footer_instagram_url ) OR !empty( $fannava_footer_pinterest_url ) ): ?>
+                                        <?php if ( !empty( $fannava_footer_fb_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_fb_url); ?>"><i class="fa-brands fa-facebook-f"></i></a>
                                         <?php endif; ?>
-                                        <?php if ( !empty( $ekobyte_footer_twitter_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_twitter_url); ?>"><i class="fa-brands fa-twitter"></i></a>
+                                        <?php if ( !empty( $fannava_footer_twitter_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_twitter_url); ?>"><i class="fa-brands fa-twitter"></i></a>
                                         <?php endif; ?>
-                                        <?php if ( !empty( $ekobyte_footer_linkedin_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_linkedin_url); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
+                                        <?php if ( !empty( $fannava_footer_linkedin_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_linkedin_url); ?>"><i class="fa-brands fa-linkedin-in"></i></a>
                                         <?php endif; ?>
-                                        <?php if ( !empty( $ekobyte_footer_youtube_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_youtube_url); ?>"><i class="fa-brands fa-youtube"></i></a>
+                                        <?php if ( !empty( $fannava_footer_youtube_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_youtube_url); ?>"><i class="fa-brands fa-youtube"></i></a>
                                         <?php endif; ?>
-                                        <?php if ( !empty( $ekobyte_footer_instagram_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_instagram_url); ?>"><i class="fa-brands fa-instagram"></i></a>
+                                        <?php if ( !empty( $fannava_footer_instagram_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_instagram_url); ?>"><i class="fa-brands fa-instagram"></i></a>
                                         <?php endif; ?>
-                                        <?php if ( !empty( $ekobyte_footer_pinterest_url ) ): ?>
-                                            <a href="<?php echo esc_html($ekobyte_footer_pinterest_url); ?>"><i class="fa-brands fa-pinterest"></i></a>
+                                        <?php if ( !empty( $fannava_footer_pinterest_url ) ): ?>
+                                            <a href="<?php echo esc_html($fannava_footer_pinterest_url); ?>"><i class="fa-brands fa-pinterest"></i></a>
                                         <?php endif; ?>
                                     <?php endif; ?>
                                 </div>
@@ -104,10 +104,10 @@ $ekobyte_footer_pinterest_url = get_theme_mod( 'ekobyte_pinterest_url', __( 'htt
                 <div class="col-12">
                     <div class="te-footer-bottom-wrapper">
                         <div class="te-copyright-text">
-                            <p><?php print ekobyte_copyright_text(); ?></p>
+                            <p><?php print fannava_copyright_text(); ?></p>
                         </div>
                         <div class="te-footer-bottom-menu">
-                            <?php ekobyte_footer_menu(); ?>
+                            <?php fannava_footer_menu(); ?>
                         </div>
                     </div>
                 </div>
@@ -116,7 +116,7 @@ $ekobyte_footer_pinterest_url = get_theme_mod( 'ekobyte_pinterest_url', __( 'htt
     </div>
     <div class="te-footer-bg">
         <?php if ( !empty( $bg_img ) ): ?>
-            <img src="<?php print esc_url( $bg_img );?>" alt="<?php print esc_attr__( 'Footer BG Image', 'ekobyte' );?>" />
+            <img src="<?php print esc_url( $bg_img );?>" alt="<?php print esc_attr__( 'Footer BG Image', 'fannava' );?>" />
         <?php endif; ?>
     </div>
 </footer>

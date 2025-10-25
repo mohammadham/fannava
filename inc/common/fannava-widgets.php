@@ -5,15 +5,15 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function ekobyte_widgets_init() {
+function fannava_widgets_init() {
 
     /**
      * blog sidebar
      */
     register_sidebar( [
-        'name'          => esc_html__( 'Blog Sidebar', 'ekobyte' ),
+        'name'          => esc_html__( 'Blog Sidebar', 'fannava' ),
         'id'            => 'blog-sidebar',
-        'description'          => esc_html__( 'Set Your Blog Widget', 'ekobyte' ),
+        'description'          => esc_html__( 'Set Your Blog Widget', 'fannava' ),
         'before_widget' => '<div id="%1$s" class="sidebar__widget mb-60 %2$s">',
         'after_widget'  => '</div>',
         'before_title'  => '<div class="te-widget-title"><h4 class="wp-block-heading">',
@@ -26,9 +26,9 @@ function ekobyte_widgets_init() {
     // footer default
     for ( $num = 1; $num <= $footer_widgets; $num++ ) {
         register_sidebar( [
-            'name'          => sprintf( esc_html__( 'Footer %1$s', 'ekobyte' ), $num ),
+            'name'          => sprintf( esc_html__( 'Footer %1$s', 'fannava' ), $num ),
             'id'            => 'footer-' . $num,
-            'description'   => sprintf( esc_html__( 'Footer column %1$s', 'ekobyte' ), $num ),
+            'description'   => sprintf( esc_html__( 'Footer column %1$s', 'fannava' ), $num ),
             'before_widget' => '<div id="%1$s" class="footer__widget footer-default-widget footer-col-'.$num.' mb-40 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h2 class="te-footer-widget-title">',
@@ -40,9 +40,9 @@ function ekobyte_widgets_init() {
     for ( $num = 1; $num <= $footer_widgets; $num++ ) {
 
         register_sidebar( [
-            'name'          => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'ekobyte' ), $num ),
+            'name'          => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'fannava' ), $num ),
             'id'            => 'footer-2-' . $num,
-            'description'   => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'ekobyte' ), $num ),
+            'description'   => sprintf( esc_html__( 'Footer Style 2 : %1$s', 'fannava' ), $num ),
             'before_widget' => '<div id="%1$s" class="footer__widget footer-default-widget footer__widget-2 footer-col-2-'.$num.' mb-40 %2$s">',
             'after_widget'  => '</div>',
             'before_title'  => '<h2 class="te-footer-widget-title">',
@@ -51,4 +51,4 @@ function ekobyte_widgets_init() {
     }
 
 }
-add_action( 'widgets_init', 'ekobyte_widgets_init' );
+add_action( 'widgets_init', 'fannava_widgets_init' );

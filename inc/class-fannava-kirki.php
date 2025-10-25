@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * ensuring that all CSS & fonts still work.
  * It does not handle the customizer options, simply the frontend CSS.
  */
-class ekobyte_Kirki {
+class fannava_Kirki {
 
 	/**
 	 * The config ID.
@@ -429,4 +429,4 @@ class ekobyte_Kirki {
 		}
 	}
 }
-new ekobyte_Kirki();
+new fannava_Kirki();

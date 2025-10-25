@@ -4,28 +4,28 @@
  *
  * Eventually, some of the functionality here could be replaced by core features.
  *
- * @package ekobyte
+ * @package fannava
  */
 
 /** 
  *
- * ekobyte header
+ * fannava header
  */
 
-function ekobyte_check_header() {
-    $ekobyte_header_style = function_exists( 'get_field' ) ? get_field( 'header_style' ) : NULL;
-    $ekobyte_default_header_style = get_theme_mod( 'choose_default_header', 'header-style-1' );
+function fannava_check_header() {
+    $fannava_header_style = function_exists( 'get_field' ) ? get_field( 'header_style' ) : NULL;
+    $fannava_default_header_style = get_theme_mod( 'choose_default_header', 'header-style-1' );
     
-    if ( $ekobyte_header_style == 'header-style-1' && empty($_GET['s']) ) {
+    if ( $fannava_header_style == 'header-style-1' && empty($_GET['s']) ) {
         get_template_part( 'template-parts/header/header-1' );
     } 
-    elseif ( $ekobyte_header_style == 'header-style-2' && empty($_GET['s']) ) {
+    elseif ( $fannava_header_style == 'header-style-2' && empty($_GET['s']) ) {
         get_template_part( 'template-parts/header/header-2' );
     }
     else {
 
         /** default header style **/
-        if ( $ekobyte_default_header_style == 'header-style-2' ) {
+        if ( $fannava_default_header_style == 'header-style-2' ) {
             get_template_part( 'template-parts/header/header-2' );
         }
         else {
@@ -34,68 +34,68 @@ function ekobyte_check_header() {
     }
 
 }
-add_action( 'ekobyte_header_style', 'ekobyte_check_header', 10 );
+add_action( 'fannava_header_style', 'fannava_check_header', 10 );
 
 
 // header logo
-function ekobyte_header_logo() { ?>
+function fannava_header_logo() { ?>
     <?php
     
-    $ekobyte_static_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
-    $ekobyte_site_logo_from_customizer = get_theme_mod( 'logo', $ekobyte_static_logo );
-    $ekobyte_site_logo_url_from_page = function_exists('get_field') ? get_field('ekobyte_header_logo') : '';
+    $fannava_static_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
+    $fannava_site_logo_from_customizer = get_theme_mod( 'logo', $fannava_static_logo );
+    $fannava_site_logo_url_from_page = function_exists('get_field') ? get_field('fannava_header_logo') : '';
 
-    $ekobyte_site_logo = !empty($ekobyte_site_logo_url_from_page['url']) ? $ekobyte_site_logo_url_from_page['url'] : $ekobyte_site_logo_from_customizer;
+    $fannava_site_logo = !empty($fannava_site_logo_url_from_page['url']) ? $fannava_site_logo_url_from_page['url'] : $fannava_site_logo_from_customizer;
     
-    if ( !empty( $ekobyte_site_logo ) ): ?>
+    if ( !empty( $fannava_site_logo ) ): ?>
         <a href="<?php print esc_url( home_url( '/' ) );?>" class="te-standard-logo">
-            <img src="<?php print esc_url( $ekobyte_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>" />
+            <img src="<?php print esc_url( $fannava_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>" />
         </a>
         <a href="<?php print esc_url( home_url( '/' ) );?>" class="te-sticky-logo">
-            <img src="<?php print esc_url( $ekobyte_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>" />
+            <img src="<?php print esc_url( $fannava_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>" />
         </a>
         <a href="<?php print esc_url( home_url( '/' ) );?>" class="te-retina-logo">
-            <img src="<?php print esc_url( $ekobyte_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>" />
+            <img src="<?php print esc_url( $fannava_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>" />
         </a>
     <?php endif;
 }
 
 // footer logo
-function ekobyte_footer_logo() {?>
+function fannava_footer_logo() {?>
     <?php
-        $ekobyte_logo_white = get_template_directory_uri() . '/assets/img/logo/footer-logo-white.png';
-        $ekobyte_footer_logo = get_theme_mod( 'footer_logo', $ekobyte_logo_white );
+        $fannava_logo_white = get_template_directory_uri() . '/assets/img/logo/footer-logo-white.png';
+        $fannava_footer_logo = get_theme_mod( 'footer_logo', $fannava_logo_white );
     ?>
     <a href="<?php print esc_url( home_url( '/' ) );?>">
-        <img src="<?php print esc_url( $ekobyte_footer_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>"/>
+        <img src="<?php print esc_url( $fannava_footer_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>"/>
     </a>
     <?php
 }
 
 // side logo
-function ekobyte_side_logo() {?>
+function fannava_side_logo() {?>
     <?php
-        $ekobyte_side_static_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
-        $ekobyte_side_logo = get_theme_mod( 'side_logo', $ekobyte_side_static_logo );
+        $fannava_side_static_logo = get_template_directory_uri() . '/assets/img/logo/logo.png';
+        $fannava_side_logo = get_theme_mod( 'side_logo', $fannava_side_static_logo );
     ?>
     <a href="<?php print esc_url( home_url( '/' ) );?>">
-        <img src="<?php print esc_url( $ekobyte_side_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>"/>
+        <img src="<?php print esc_url( $fannava_side_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>"/>
     </a>
     <?php
 }
 
-function ekobyte_mobile_logo() {
+function fannava_mobile_logo() {
     // side info
-    $ekobyte_mobile_logo_hide = get_theme_mod( 'ekobyte_mobile_logo_hide', false );
+    $fannava_mobile_logo_hide = get_theme_mod( 'fannava_mobile_logo_hide', false );
 
-    $ekobyte_site_logo = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo/logo.png' );
+    $fannava_site_logo = get_theme_mod( 'logo', get_template_directory_uri() . '/assets/img/logo/logo.png' );
 
     ?>
 
-    <?php if ( !empty( $ekobyte_mobile_logo_hide ) ): ?>
+    <?php if ( !empty( $fannava_mobile_logo_hide ) ): ?>
     <div class="side__logo mb-25">
         <a class="sideinfo-logo" href="<?php print esc_url( home_url( '/' ) );?>">
-            <img src="<?php print esc_url( $ekobyte_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'ekobyte' );?>" />
+            <img src="<?php print esc_url( $fannava_site_logo );?>" alt="<?php print esc_attr__( 'logo', 'fannava' );?>" />
         </a>
     </div>
     <?php endif;?>
@@ -103,102 +103,102 @@ function ekobyte_mobile_logo() {
 <?php }
 
 // favicon logo
-function ekobyte_favicon_logo_func() {
-    $ekobyte_static_favicon = get_template_directory_uri() . '/assets/img/logo/favicon.svg';
-    $ekobyte_favicon_url_from_customizer = get_theme_mod( 'favicon_url', $ekobyte_static_favicon );
-    $ekobyte_favicon_url_from_page = function_exists('get_field') ? get_field('ekobyte_custom_favicon') : '';
+function fannava_favicon_logo_func() {
+    $fannava_static_favicon = get_template_directory_uri() . '/assets/img/logo/favicon.svg';
+    $fannava_favicon_url_from_customizer = get_theme_mod( 'favicon_url', $fannava_static_favicon );
+    $fannava_favicon_url_from_page = function_exists('get_field') ? get_field('fannava_custom_favicon') : '';
 
-    $ekobyte_favicon = !empty($ekobyte_favicon_url_from_page['url']) ? $ekobyte_favicon_url_from_page['url'] : $ekobyte_favicon_url_from_customizer;
+    $fannava_favicon = !empty($fannava_favicon_url_from_page['url']) ? $fannava_favicon_url_from_page['url'] : $fannava_favicon_url_from_customizer;
    
 ?>
 
-<link rel="shortcut icon" type="image/x-icon" href="<?php print esc_url( $ekobyte_favicon );?>">
+<link rel="shortcut icon" type="image/x-icon" href="<?php print esc_url( $fannava_favicon );?>">
 
 <?php
 }
-add_action( 'wp_head', 'ekobyte_favicon_logo_func' );
+add_action( 'wp_head', 'fannava_favicon_logo_func' );
 
 
 /**
- * [ekobyte_header_social_profiles description]
+ * [fannava_header_social_profiles description]
  * @return [type] [description]
  */
-function ekobyte_header_social_profiles() {
-    $ekobyte_topbar_fb_url = get_theme_mod( 'ekobyte_topbar_fb_url', __( '#', 'ekobyte' ) );
-    $ekobyte_topbar_twitter_url = get_theme_mod( 'ekobyte_topbar_twitter_url', __( '#', 'ekobyte' ) );
-    $ekobyte_topbar_instagram_url = get_theme_mod( 'ekobyte_topbar_instagram_url', __( '#', 'ekobyte' ) );
-    $ekobyte_topbar_linkedin_url = get_theme_mod( 'ekobyte_topbar_linkedin_url', __( '#', 'ekobyte' ) );
-    $ekobyte_topbar_youtube_url = get_theme_mod( 'ekobyte_topbar_youtube_url', __( '#', 'ekobyte' ) );
+function fannava_header_social_profiles() {
+    $fannava_topbar_fb_url = get_theme_mod( 'fannava_topbar_fb_url', __( '#', 'fannava' ) );
+    $fannava_topbar_twitter_url = get_theme_mod( 'fannava_topbar_twitter_url', __( '#', 'fannava' ) );
+    $fannava_topbar_instagram_url = get_theme_mod( 'fannava_topbar_instagram_url', __( '#', 'fannava' ) );
+    $fannava_topbar_linkedin_url = get_theme_mod( 'fannava_topbar_linkedin_url', __( '#', 'fannava' ) );
+    $fannava_topbar_youtube_url = get_theme_mod( 'fannava_topbar_youtube_url', __( '#', 'fannava' ) );
     ?>
         <ul>
-        <?php if ( !empty( $ekobyte_topbar_fb_url ) ): ?>
-          <li><a href="<?php print esc_url( $ekobyte_topbar_fb_url );?>"><span><i class="fab fa-facebook-f"></i></span></a></li>
+        <?php if ( !empty( $fannava_topbar_fb_url ) ): ?>
+          <li><a href="<?php print esc_url( $fannava_topbar_fb_url );?>"><span><i class="fab fa-facebook-f"></i></span></a></li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_topbar_twitter_url ) ): ?>
-            <li><a href="<?php print esc_url( $ekobyte_topbar_twitter_url );?>"><span><i class="fab fa-twitter"></i></span></a></li>
+        <?php if ( !empty( $fannava_topbar_twitter_url ) ): ?>
+            <li><a href="<?php print esc_url( $fannava_topbar_twitter_url );?>"><span><i class="fab fa-twitter"></i></span></a></li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_topbar_instagram_url ) ): ?>
-            <li><a href="<?php print esc_url( $ekobyte_topbar_instagram_url );?>"><span><i class="fab fa-instagram"></i></span></a></li>
+        <?php if ( !empty( $fannava_topbar_instagram_url ) ): ?>
+            <li><a href="<?php print esc_url( $fannava_topbar_instagram_url );?>"><span><i class="fab fa-instagram"></i></span></a></li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_topbar_linkedin_url ) ): ?>
-            <li><a href="<?php print esc_url( $ekobyte_topbar_linkedin_url );?>"><span><i class="fab fa-linkedin"></i></span></a></li>
+        <?php if ( !empty( $fannava_topbar_linkedin_url ) ): ?>
+            <li><a href="<?php print esc_url( $fannava_topbar_linkedin_url );?>"><span><i class="fab fa-linkedin"></i></span></a></li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_topbar_youtube_url ) ): ?>
-            <li><a href="<?php print esc_url( $ekobyte_topbar_youtube_url );?>"><span><i class="fab fa-youtube"></i></span></a></li>
+        <?php if ( !empty( $fannava_topbar_youtube_url ) ): ?>
+            <li><a href="<?php print esc_url( $fannava_topbar_youtube_url );?>"><span><i class="fab fa-youtube"></i></span></a></li>
         <?php endif;?>
         </ul>
 
 <?php
 }
 
-function ekobyte_footer_social_profiles() {
-    $ekobyte_footer_fb_url = get_theme_mod( 'ekobyte_footer_fb_url', __( '#', 'ekobyte' ) );
-    $ekobyte_footer_twitter_url = get_theme_mod( 'ekobyte_footer_twitter_url', __( '#', 'ekobyte' ) );
-    $ekobyte_footer_instagram_url = get_theme_mod( 'ekobyte_footer_instagram_url', __( '#', 'ekobyte' ) );
-    $ekobyte_footer_linkedin_url = get_theme_mod( 'ekobyte_footer_linkedin_url', __( '#', 'ekobyte' ) );
-    $ekobyte_footer_youtube_url = get_theme_mod( 'ekobyte_footer_youtube_url', __( '#', 'ekobyte' ) );
+function fannava_footer_social_profiles() {
+    $fannava_footer_fb_url = get_theme_mod( 'fannava_footer_fb_url', __( '#', 'fannava' ) );
+    $fannava_footer_twitter_url = get_theme_mod( 'fannava_footer_twitter_url', __( '#', 'fannava' ) );
+    $fannava_footer_instagram_url = get_theme_mod( 'fannava_footer_instagram_url', __( '#', 'fannava' ) );
+    $fannava_footer_linkedin_url = get_theme_mod( 'fannava_footer_linkedin_url', __( '#', 'fannava' ) );
+    $fannava_footer_youtube_url = get_theme_mod( 'fannava_footer_youtube_url', __( '#', 'fannava' ) );
     ?>
 
         <ul>
-        <?php if ( !empty( $ekobyte_footer_fb_url ) ): ?>
+        <?php if ( !empty( $fannava_footer_fb_url ) ): ?>
             <li>
-                <a href="<?php print esc_url( $ekobyte_footer_fb_url );?>">
+                <a href="<?php print esc_url( $fannava_footer_fb_url );?>">
                     <i class="fab fa-facebook-f"></i>
                 </a>
             </li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_footer_twitter_url ) ): ?>
+        <?php if ( !empty( $fannava_footer_twitter_url ) ): ?>
             <li>
-                <a href="<?php print esc_url( $ekobyte_footer_twitter_url );?>">
+                <a href="<?php print esc_url( $fannava_footer_twitter_url );?>">
                     <i class="fab fa-twitter"></i>
                 </a>
             </li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_footer_instagram_url ) ): ?>
+        <?php if ( !empty( $fannava_footer_instagram_url ) ): ?>
             <li>
-                <a href="<?php print esc_url( $ekobyte_footer_instagram_url );?>">
+                <a href="<?php print esc_url( $fannava_footer_instagram_url );?>">
                     <i class="fab fa-instagram"></i>
                 </a>
             </li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_footer_linkedin_url ) ): ?>
+        <?php if ( !empty( $fannava_footer_linkedin_url ) ): ?>
             <li>
-                <a href="<?php print esc_url( $ekobyte_footer_linkedin_url );?>">
+                <a href="<?php print esc_url( $fannava_footer_linkedin_url );?>">
                     <i class="fab fa-linkedin"></i>
                 </a>
             </li>
         <?php endif;?>
 
-        <?php if ( !empty( $ekobyte_footer_youtube_url ) ): ?>
+        <?php if ( !empty( $fannava_footer_youtube_url ) ): ?>
             <li>
-                <a href="<?php print esc_url( $ekobyte_footer_youtube_url );?>">
+                <a href="<?php print esc_url( $fannava_footer_youtube_url );?>">
                     <i class="fab fa-youtube"></i>
                 </a>
             </li>
@@ -208,57 +208,57 @@ function ekobyte_footer_social_profiles() {
 }
 
 /**
- * [ekobyte_header_menu description]
+ * [fannava_header_menu description]
  * @return [type] [description]
  */
-function ekobyte_header_menu() {
+function fannava_header_menu() {
     ?>
     <?php
         wp_nav_menu( [
             'theme_location' => 'main-menu',
             'menu_class'     => '',
             'container'      => '',
-            'fallback_cb'    => 'ekobyte_Navwalker_Class::fallback',
-            'walker'         => new ekobyte_Navwalker_Class,
+            'fallback_cb'    => 'fannava_Navwalker_Class::fallback',
+            'walker'         => new fannava_Navwalker_Class,
         ] );
     ?>
     <?php
 }
 
 /**
- * [ekobyte_footer_menu description]
+ * [fannava_footer_menu description]
  * @return [type] [description]
  */
-function ekobyte_footer_menu() {
+function fannava_footer_menu() {
     wp_nav_menu( [
         'theme_location' => 'footer-menu',
         'menu_class'     => 'm-0',
         'container'      => '',
-        'fallback_cb'    => 'ekobyte_Navwalker_Class::fallback',
-        'walker'         => new ekobyte_Navwalker_Class,
+        'fallback_cb'    => 'fannava_Navwalker_Class::fallback',
+        'walker'         => new fannava_Navwalker_Class,
     ] );
 }
 
 /**
  *
- * ekobyte footer
+ * fannava footer
  */
-add_action( 'ekobyte_footer_style', 'ekobyte_check_footer', 10 );
+add_action( 'fannava_footer_style', 'fannava_check_footer', 10 );
 
-function ekobyte_check_footer() {
-    $ekobyte_footer_style = function_exists( 'get_field' ) ? get_field( 'footer_style' ) : NULL;
-    $ekobyte_default_footer_style = get_theme_mod( 'choose_default_footer', 'footer-style-1' );
+function fannava_check_footer() {
+    $fannava_footer_style = function_exists( 'get_field' ) ? get_field( 'footer_style' ) : NULL;
+    $fannava_default_footer_style = get_theme_mod( 'choose_default_footer', 'footer-style-1' );
 
-    if ( $ekobyte_footer_style == 'footer-style-1' ) {
+    if ( $fannava_footer_style == 'footer-style-1' ) {
         get_template_part( 'template-parts/footer/footer-1' );
     } 
-    elseif ( $ekobyte_footer_style == 'footer-style-2' ) {
+    elseif ( $fannava_footer_style == 'footer-style-2' ) {
         get_template_part( 'template-parts/footer/footer-2' );
     }
     else {
 
         /** default footer style **/
-        if ( $ekobyte_default_footer_style == 'footer-style-2' ) {
+        if ( $fannava_default_footer_style == 'footer-style-2' ) {
             get_template_part( 'template-parts/footer/footer-2' );
         } 
         else {
@@ -269,13 +269,13 @@ function ekobyte_check_footer() {
 }
 
 
-// ekobyte copyright text
-function ekobyte_copyright_text() {
+// fannava copyright text
+function fannava_copyright_text() {
     $current_year = date('Y');
     $pre_text = 'Copyright © '.$current_year;
-    $customizer_text = get_theme_mod( 'ekobyte_copyright', esc_html__( 'Ekobyte. All Rights Reserved', 'ekobyte' ) );
+    $customizer_text = get_theme_mod( 'fannava_copyright', esc_html__( 'Fannava. All Rights Reserved', 'fannava' ) );
     if( $customizer_text == ''){
-        $customizer_text = "Ekobyte. All Rights Reserved";
+        $customizer_text = "Fannava. All Rights Reserved";
     }
     $merged_text = $pre_text . " " .$customizer_text;
     echo esc_html( $merged_text );
@@ -286,14 +286,14 @@ function ekobyte_copyright_text() {
  *
  * pagination
  */
-if ( !function_exists( 'ekobyte_pagination' ) ) {
+if ( !function_exists( 'fannava_pagination' ) ) {
 
-    function _ekobyte_pagi_callback( $pagination ) {
+    function _fannava_pagi_callback( $pagination ) {
         return $pagination;
     }
 
     //page navigation
-    function ekobyte_pagination( $prev, $next, $pages, $args ) {
+    function fannava_pagination( $prev, $next, $pages, $args ) {
         global $wp_query, $wp_rewrite;
         $menu = '';
         $wp_query->query_vars['paged'] > 1 ? $current = $wp_query->query_vars['paged'] : $current = 1;
@@ -337,32 +337,32 @@ if ( !function_exists( 'ekobyte_pagination' ) ) {
             $pagi .= '</ul>';
         }
 
-        print _ekobyte_pagi_callback( $pagi );
+        print _fannava_pagi_callback( $pagi );
     }
 }
 
 
 // header top bg color
-function ekobyte_breadcrumb_bg_color() {
-    $color_code = get_theme_mod( 'ekobyte_breadcrumb_bg_color', '#222' );
-    wp_enqueue_style( 'ekobyte-custom', EKOBYTE_THEME_CSS_DIR . 'ekobyte-custom.css', [] );
+function fannava_breadcrumb_bg_color() {
+    $color_code = get_theme_mod( 'fannava_breadcrumb_bg_color', '#222' );
+    wp_enqueue_style( 'fannava-custom', FANNAVA_THEME_CSS_DIR . 'fannava-custom.css', [] );
     if ( $color_code != '' ) {
         $custom_css = '';
         $custom_css .= ".breadcrumb-bg.gray-bg{ background: " . $color_code . "}";
 
-        wp_add_inline_style( 'ekobyte-breadcrumb-bg', $custom_css );
+        wp_add_inline_style( 'fannava-breadcrumb-bg', $custom_css );
     }
 }
-add_action( 'wp_enqueue_scripts', 'ekobyte_breadcrumb_bg_color' );
+add_action( 'wp_enqueue_scripts', 'fannava_breadcrumb_bg_color' );
 
 
 
-// ekobyte_kses_intermediate
-function ekobyte_kses_intermediate( $string = '' ) {
-    return wp_kses( $string, ekobyte_get_allowed_html_tags( 'intermediate' ) );
+// fannava_kses_intermediate
+function fannava_kses_intermediate( $string = '' ) {
+    return wp_kses( $string, fannava_get_allowed_html_tags( 'intermediate' ) );
 }
 
-function ekobyte_get_allowed_html_tags( $level = 'basic' ) {
+function fannava_get_allowed_html_tags( $level = 'basic' ) {
     $allowed_html = [
         'b'      => [],
         'i'      => [],
@@ -422,7 +422,7 @@ function ekobyte_get_allowed_html_tags( $level = 'basic' ) {
 
 // WP kses allowed tags
 // ----------------------------------------------------------------------------------------
-function ekobyte_kses($raw){
+function fannava_kses($raw){
 
    $allowed_tags = array(
       'a'                         => array(

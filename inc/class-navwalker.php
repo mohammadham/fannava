@@ -20,13 +20,13 @@
  */
 
 /* Check if Class Exists. */
-if ( !class_exists( 'ekobyte_Navwalker_Class' ) ) {
+if ( !class_exists( 'fannava_Navwalker_Class' ) ) {
     /**
      * WP_Bootstrap_Navwalker class.
      *
      * @extends Walker_Nav_Menu
      */
-    class ekobyte_Navwalker_Class extends Walker_Nav_Menu {
+    class fannava_Navwalker_Class extends Walker_Nav_Menu {
 
         /**
          * Starts the list before the elements are added.
@@ -363,7 +363,7 @@ if ( !class_exists( 'ekobyte_Navwalker_Class' ) ) {
                 if ( $menu_class ) {
                     $fallback_output .= ' class="' . esc_attr( $menu_class ) . '"';}
                 $fallback_output .= '>';
-                $fallback_output .= '<li><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr__( 'Home', 'ekobyte' ) . '">' . esc_html__( 'Home', 'ekobyte' ) . '</a></li>';
+                $fallback_output .= '<li><a href="' . esc_url( home_url( '/' ) ) . '" title="' . esc_attr__( 'Home', 'fannava' ) . '">' . esc_html__( 'Home', 'fannava' ) . '</a></li>';
                 $fallback_output .= '</ul>';
                 if ( $container ) {
                     $fallback_output .= '</' . esc_attr( $container ) . '>';

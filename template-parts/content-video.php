@@ -5,10 +5,10 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 
-$ekobyte_video_url = function_exists('get_field') ? get_field('audio_or_video_link') : NULL;
+$fannava_video_url = function_exists('get_field') ? get_field('audio_or_video_link') : NULL;
 
 if (is_single()) :
 ?>
@@ -21,8 +21,8 @@ if (is_single()) :
             <?php the_post_thumbnail('full', ['class' => 'img-responsive']); ?>
                 <div class="popup-video-wrapper">
                     <div class="video-btn">
-                        <?php if (!empty($ekobyte_video_url)) : ?>
-                            <a href="<?php print esc_url($ekobyte_video_url); ?>" class="mfp-iframe video-play">
+                        <?php if (!empty($fannava_video_url)) : ?>
+                            <a href="<?php print esc_url($fannava_video_url); ?>" class="mfp-iframe video-play">
                                 <i class="fa-solid fa-play" aria-hidden="true"></i>
                             </a>
                         <?php endif; ?>
@@ -41,7 +41,7 @@ if (is_single()) :
             </div>
             <div class="te-single-post-meta">
                 <div class="te-blog-post-tag">
-                    <?php print ekobyte_get_tag(); ?>
+                    <?php print fannava_get_tag(); ?>
                 </div>
             </div>
         </div>
@@ -55,8 +55,8 @@ if (is_single()) :
             <?php the_post_thumbnail('full', ['class' => 'img-responsive']); ?>
                 <div class="popup-video-wrapper">
                     <div class="video-btn">
-                        <?php if (!empty($ekobyte_video_url)) : ?>
-                            <a href="<?php print esc_url($ekobyte_video_url); ?>" class="mfp-iframe video-play">
+                        <?php if (!empty($fannava_video_url)) : ?>
+                            <a href="<?php print esc_url($fannava_video_url); ?>" class="mfp-iframe video-play">
                                 <i class="fa-solid fa-play" aria-hidden="true"></i>
                             </a>
                         <?php endif; ?>

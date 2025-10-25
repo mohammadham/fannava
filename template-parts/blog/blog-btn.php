@@ -5,16 +5,16 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 
-$ekobyte_blog_btn = get_theme_mod( 'ekobyte_blog_btn', 'Learn More' );
-$ekobyte_blog_btn_switch = get_theme_mod( 'ekobyte_blog_btn_switch', true );
+$fannava_blog_btn = get_theme_mod( 'fannava_blog_btn', 'Learn More' );
+$fannava_blog_btn_switch = get_theme_mod( 'fannava_blog_btn_switch', true );
 
 ?>
 
-<?php if ( !empty( $ekobyte_blog_btn_switch ) ): ?>
+<?php if ( !empty( $fannava_blog_btn_switch ) ): ?>
     <a href="<?php the_permalink();?>" class="te-theme-btn">
-        <?php print esc_html( $ekobyte_blog_btn );?> <i class="fa-solid fa-arrow-right"></i>
+        <?php print esc_html( $fannava_blog_btn );?> <i class="fa-solid fa-arrow-right"></i>
     </a>
 <?php endif;?>

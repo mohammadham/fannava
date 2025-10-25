@@ -2,8 +2,8 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Ekobyte 1.0.7\n"
-"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/ekobyte\n"
+"Project-Id-Version: Fannava 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/fannava\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -12,18 +12,18 @@ msgstr ""
 "POT-Creation-Date: 2023-05-22T12:49:19+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.7.1\n"
-"X-Domain: ekobyte\n"
+"X-Domain: fannava\n"
 
 #. Theme Name of the theme
-msgid "Ekobyte"
+msgid "Fannava"
 msgstr ""
 
 #. Theme URI of the theme
-msgid "https://ekobyte.themeearth.com/"
+msgid "https://fannava.themeearth.com/"
 msgstr ""
 
 #. Description of the theme
-msgid "Ekobyte - IT Service & Technology WordPress Theme"
+msgid "Fannava - IT Service & Technology WordPress Theme"
 msgstr ""
 
 #. Author of the theme
@@ -150,7 +150,7 @@ msgstr ""
 
 #: functions.php:331
 #: inc/add_plugin.php:28
-msgid "Ekobyte Core "
+msgid "Fannava Core "
 msgstr ""
 
 #: functions.php:338
@@ -620,58 +620,58 @@ msgstr ""
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: inc/common/ekobyte-breadcrumb.php:20
-#: inc/common/ekobyte-breadcrumb.php:24
+#: inc/common/fannava-breadcrumb.php:20
+#: inc/common/fannava-breadcrumb.php:24
 #: inc/kirki-customizer.php:551
 msgid "Blog"
 msgstr ""
 
-#: inc/common/ekobyte-breadcrumb.php:37
-#: inc/common/ekobyte-breadcrumb.php:46
+#: inc/common/fannava-breadcrumb.php:37
+#: inc/common/fannava-breadcrumb.php:46
 msgid "Shop"
 msgstr ""
 
-#: inc/common/ekobyte-breadcrumb.php:40
+#: inc/common/fannava-breadcrumb.php:40
 msgid "Search Results for : "
 msgstr ""
 
-#: inc/common/ekobyte-breadcrumb.php:43
+#: inc/common/fannava-breadcrumb.php:43
 msgid "Page not Found"
 msgstr ""
 
-#: inc/common/ekobyte-breadcrumb.php:124
+#: inc/common/fannava-breadcrumb.php:124
 msgid "Enter Your Keyword"
 msgstr ""
 
 #. Translators: If there are characters in your language that are not supported by chosen font(s), translate this to 'off'. Do not translate into your own language.
-#: inc/common/ekobyte-scripts.php:44
+#: inc/common/fannava-scripts.php:44
 msgctxt "Google font: on or off"
 msgid "on"
 msgstr ""
 
-#: inc/common/ekobyte-widgets.php:16
+#: inc/common/fannava-widgets.php:16
 msgid "Blog Sidebar"
 msgstr ""
 
-#: inc/common/ekobyte-widgets.php:18
+#: inc/common/fannava-widgets.php:18
 msgid "Set Your Blog Widget"
 msgstr ""
 
-#: inc/common/ekobyte-widgets.php:31
+#: inc/common/fannava-widgets.php:31
 msgid "Footer %1$s"
 msgstr ""
 
-#: inc/common/ekobyte-widgets.php:33
+#: inc/common/fannava-widgets.php:33
 msgid "Footer column %1$s"
 msgstr ""
 
-#: inc/common/ekobyte-widgets.php:46
-#: inc/common/ekobyte-widgets.php:48
+#: inc/common/fannava-widgets.php:46
+#: inc/common/fannava-widgets.php:48
 msgid "Footer Style 2 : %1$s"
 msgstr ""
 
 #: inc/kirki-customizer.php:21
-msgid "Ekobyte Customizer"
+msgid "Fannava Customizer"
 msgstr ""
 
 #: inc/kirki-customizer.php:28
@@ -784,7 +784,7 @@ msgid "Mail ID"
 msgstr ""
 
 #: inc/kirki-customizer.php:187
-msgid "info@ekobyte.com"
+msgid "info@fannava.com"
 msgstr ""
 
 #: inc/kirki-customizer.php:202
@@ -981,7 +981,7 @@ msgid "Copyright"
 msgstr ""
 
 #: inc/kirki-customizer.php:628
-msgid "Copyright &copy; 2023 Ekobyte. All Rights Reserved"
+msgid "Copyright &copy; 2023 Fannava. All Rights Reserved"
 msgstr ""
 
 #: inc/kirki-customizer.php:641
@@ -1028,7 +1028,7 @@ msgid "logo"
 msgstr ""
 
 #: inc/template-helper.php:248
-msgid "© 2023 ekobyte, All Rights Reserved."
+msgid "© 2023 fannava, All Rights Reserved."
 msgstr ""
 
 #. Template Name of the theme

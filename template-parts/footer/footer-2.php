@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 ?>
 
@@ -47,10 +47,10 @@
                 <div class="col-12">
                     <div class="te-footer-bottom-wrapper">
                         <div class="te-copyright-text">
-                            <p><?php print ekobyte_copyright_text(); ?></p>
+                            <p><?php print fannava_copyright_text(); ?></p>
                         </div>
                         <div class="te-footer-bottom-menu">
-                            <?php ekobyte_footer_menu(); ?>
+                            <?php fannava_footer_menu(); ?>
                         </div>
                     </div>
                 </div>

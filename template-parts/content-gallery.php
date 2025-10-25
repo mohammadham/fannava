@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 
 $gallery_images = function_exists('get_field') ? get_field('gallery_images') : '';
@@ -45,7 +45,7 @@ if (is_single()) : ?>
             <?php } ?>
             <div class="te-single-post-meta">
                 <div class="te-blog-post-tag">
-                    <?php print ekobyte_get_tag(); ?>
+                    <?php print fannava_get_tag(); ?>
                 </div>
             </div>
         </div>

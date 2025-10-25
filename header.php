@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ekobyte
+ * @package fannava
  */
 ?>
 
@@ -25,8 +25,8 @@
     <?php wp_body_open();?>
   
     <!-- header start -->
-    <?php do_action( 'ekobyte_header_style' );?>
+    <?php do_action( 'fannava_header_style' );?>
     <!-- header end -->
     <main>
     <!-- wrapper-box start -->
-    <?php do_action( 'ekobyte_before_main_content' );?>
+    <?php do_action( 'fannava_before_main_content' );?>

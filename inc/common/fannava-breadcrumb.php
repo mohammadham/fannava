@@ -1,27 +1,27 @@
 <?php
 /**
- * Breadcrumbs for ekobyte theme.
+ * Breadcrumbs for fannava theme.
  *
- * @package     ekobyte
+ * @package     fannava
  * @author      Techsometimes
  * @copyright   Copyright (c) 2022, Techsometimes
  * @link        https://weblearnbd.net
- * @since       ekobyte 1.0.0
+ * @since       fannava 1.0.0
  */
 
 
-function ekobyte_breadcrumb_func() {
+function fannava_breadcrumb_func() {
     global $post;  
     $breadcrumb_class = '';
     $breadcrumb_show = 1;
 
 
     if ( is_front_page() && is_home() ) {
-        $title = get_theme_mod('breadcrumb_blog_title', __('Blog','ekobyte'));
+        $title = get_theme_mod('breadcrumb_blog_title', __('Blog','fannava'));
         $breadcrumb_class = 'home_front_page';
     }
     elseif ( is_front_page() ) {
-        $title = get_theme_mod('breadcrumb_blog_title', __('Blog','ekobyte'));
+        $title = get_theme_mod('breadcrumb_blog_title', __('Blog','fannava'));
         $breadcrumb_show = 0;
     }
     elseif ( is_home() ) {
@@ -34,16 +34,16 @@ function ekobyte_breadcrumb_func() {
       $title = get_the_title();
     } 
     elseif ( is_single() && 'product' == get_post_type() ) {
-        $title = get_theme_mod( 'breadcrumb_product_details', __( 'Shop', 'ekobyte' ) );
+        $title = get_theme_mod( 'breadcrumb_product_details', __( 'Shop', 'fannava' ) );
     } 
     elseif ( is_search() ) {
-        $title = esc_html__( 'Search Results for : ', 'ekobyte' ) . get_search_query();
+        $title = esc_html__( 'Search Results for : ', 'fannava' ) . get_search_query();
     } 
     elseif ( is_404() ) {
-        $title = esc_html__( 'Page not Found', 'ekobyte' );
+        $title = esc_html__( 'Page not Found', 'fannava' );
     } 
     elseif ( function_exists( 'is_woocommerce' ) && is_woocommerce() ) {
-        $title = get_theme_mod( 'breadcrumb_shop', __( 'Shop', 'ekobyte' ) );
+        $title = get_theme_mod( 'breadcrumb_shop', __( 'Shop', 'fannava' ) );
     } 
     elseif ( is_archive() ) {
         $title = get_the_archive_title();
@@ -89,7 +89,7 @@ function ekobyte_breadcrumb_func() {
             $bg_img = !empty( $bg_img_from_page ) ? $bg_img_from_page['url'] : $bg_img;
         }
         
-        $bg_color = get_theme_mod( 'ekobyte_breadcrumb_bg_color', __('#E0F0FE', 'ekobyte') );
+        $bg_color = get_theme_mod( 'fannava_breadcrumb_bg_color', __('#E0F0FE', 'fannava') );
         ?>
 
          <!-- page title area start -->
@@ -104,7 +104,7 @@ function ekobyte_breadcrumb_func() {
                     <?php if (!empty($breadcrumb_info_switch)) : ?>  
                         <div class="te-breadcrumb-wrapper">
                             <div class="te-page-heading">
-                                <h3 class="te-page-title"><?php echo ekobyte_kses( $title ); ?></h3>
+                                <h3 class="te-page-title"><?php echo fannava_kses( $title ); ?></h3>
                             </div>
                             <div class="te-breadcrumb-list">
                                 <?php if(function_exists('bcn_display')) {
@@ -125,15 +125,15 @@ function ekobyte_breadcrumb_func() {
       }
 }
 
-add_action( 'ekobyte_before_main_content', 'ekobyte_breadcrumb_func' );
+add_action( 'fannava_before_main_content', 'fannava_breadcrumb_func' );
 
-// ekobyte_search_form
-function ekobyte_search_form() {
+// fannava_search_form
+function fannava_search_form() {
     ?>
      <div class="search-wrapper p-relative transition-3 d-none">
          <div class="search-form transition-3">
              <form method="get" action="<?php print esc_url( home_url( '/' ) );?>" >
-                 <input type="search" name="s" value="<?php print esc_attr( get_search_query() )?>" placeholder="<?php print esc_attr__( 'Enter Your Keyword', 'ekobyte' );?>" >
+                 <input type="search" name="s" value="<?php print esc_attr( get_search_query() )?>" placeholder="<?php print esc_attr__( 'Enter Your Keyword', 'fannava' );?>" >
                  <button type="submit" class="search-btn"><i class="far fa-search"></i></button>
              </form>
              <a href="javascript:void(0);" class="search-close"><i class="far fa-times"></i></a>
@@ -142,4 +142,4 @@ function ekobyte_search_form() {
    <?php
 }
 
-add_action( 'ekobyte_before_main_content', 'ekobyte_search_form' );
+add_action( 'fannava_before_main_content', 'fannava_search_form' );

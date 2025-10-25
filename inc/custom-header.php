@@ -8,34 +8,34 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package ekobyte
+ * @package fannava
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses ekobyte_header_style()
+ * @uses fannava_header_style()
  */
-function ekobyte_custom_header_setup() {
+function fannava_custom_header_setup() {
 
-    add_theme_support( 'custom-header', apply_filters( 'ekobyte_custom_header_args', [
+    add_theme_support( 'custom-header', apply_filters( 'fannava_custom_header_args', [
         'default-image'      => '',
         'default-text-color' => '000000',
         'width'              => 1000,
         'height'             => 250,
         'flex-height'        => true,
-        'wp-head-callback'   => 'ekobyte_header_style',
+        'wp-head-callback'   => 'fannava_header_style',
     ] ) );
 }
-add_action( 'after_setup_theme', 'ekobyte_custom_header_setup' );
+add_action( 'after_setup_theme', 'fannava_custom_header_setup' );
 
-if ( !function_exists( 'ekobyte_header_style' ) ):
+if ( !function_exists( 'fannava_header_style' ) ):
     /**
      * Styles the header image and text displayed on the blog.
      *
-     * @see ekobyte_custom_header_setup().
+     * @see fannava_custom_header_setup().
      */
-    function ekobyte_header_style() {
+    function fannava_header_style() {
         $header_text_color = get_header_textcolor();
 
         /*

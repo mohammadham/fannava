@@ -4,7 +4,7 @@
  *
  * @link https://jetpack.com/
  *
- * @package ekobyte
+ * @package fannava
  */
 
 /**
@@ -14,11 +14,11 @@
  * See: https://jetpack.com/support/responsive-videos/
  * See: https://jetpack.com/support/content-options/
  */
-function ekobyte_jetpack_setup() {
+function fannava_jetpack_setup() {
     // Add theme support for Infinite Scroll.
     add_theme_support( 'infinite-scroll', [
         'container' => 'main',
-        'render'    => 'ekobyte_infinite_scroll_render',
+        'render'    => 'fannava_infinite_scroll_render',
         'footer'    => 'page',
     ] );
 
@@ -28,7 +28,7 @@ function ekobyte_jetpack_setup() {
     // Add theme support for Content Options.
     add_theme_support( 'jetpack-content-options', [
         'post-details'    => [
-            'stylesheet' => 'ekobyte-style',
+            'stylesheet' => 'fannava-style',
             'date'       => '.posted-on',
             'categories' => '.cat-links',
             'tags'       => '.tags-links',
@@ -42,12 +42,12 @@ function ekobyte_jetpack_setup() {
         ],
     ] );
 }
-add_action( 'after_setup_theme', 'ekobyte_jetpack_setup' );
+add_action( 'after_setup_theme', 'fannava_jetpack_setup' );
 
 /**
  * Custom render function for Infinite Scroll.
  */
-function ekobyte_infinite_scroll_render() {
+function fannava_infinite_scroll_render() {
     while ( have_posts() ) {
         the_post();
         if ( is_search() ):

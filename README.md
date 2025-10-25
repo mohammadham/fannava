@@ -1,1 +1,1 @@
-# ekobyte-wp-theme
+# fannava-wp-theme

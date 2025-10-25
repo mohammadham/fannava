@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package ekobyte
+ * @package fannava
  */
 
 if ( !is_active_sidebar( 'blog-sidebar' ) ) {

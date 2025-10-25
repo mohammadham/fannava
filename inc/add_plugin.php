@@ -15,9 +15,9 @@
  * @link       https://github.com/TGMPA/TGM-Plugin-Activation
  */
 
-add_action( 'tgmpa_register', 'ekobyte_register_required_plugins' );
+add_action( 'tgmpa_register', 'fannava_register_required_plugins' );
 
-function ekobyte_register_required_plugins() {
+function fannava_register_required_plugins() {
     /*
      * Array of plugin arrays. Required keys are name and slug.
      * If the source is NOT from the .org repo, then source is also required.
@@ -25,66 +25,66 @@ function ekobyte_register_required_plugins() {
     $plugin_dir_path = get_template_directory() . '/framework/plugins/';
     $plugins = [
         [
-            'name'                => 'Ekobyte Core',
-             'slug'               => 'ekobyte-core',
-             'source'             => $plugin_dir_path . 'ekobyte-core.zip',
+            'name'                => 'Fannava Core',
+             'slug'               => 'fannava-core',
+             'source'             => $plugin_dir_path . 'fannava-core.zip',
              'required'           => true,
              'version'            => '1.0.0',
              'external_url'       => ''
         ],
         [
-            'name'     => esc_html__( 'Elementor Page Builder', 'ekobyte' ),
+            'name'     => esc_html__( 'Elementor Page Builder', 'fannava' ),
             'slug'     => 'elementor',
             'required' => true,
         ],
         [
-            'name'         => esc_html__( 'Advanced Custom Fields', 'ekobyte' ),
+            'name'         => esc_html__( 'Advanced Custom Fields', 'fannava' ),
             'slug'         => 'advanced-custom-fields',
             'required'     => true,
         ],
         [
-            'name'     => esc_html__( 'ACF Photo Gallery Field', 'ekobyte' ),
+            'name'     => esc_html__( 'ACF Photo Gallery Field', 'fannava' ),
             'slug'     => 'navz-photo-gallery',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'WP Classic Editor', 'ekobyte' ),
+            'name'     => esc_html__( 'WP Classic Editor', 'fannava' ),
             'slug'     => 'classic-editor',
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'Contact Form 7', 'ekobyte' ),
+            'name'     => esc_html__( 'Contact Form 7', 'fannava' ),
             'slug'     => 'contact-form-7',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'jQuery Updater', 'ekobyte' ),
+            'name'     => esc_html__( 'jQuery Updater', 'fannava' ),
             'slug'     => 'jquery-updater',
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'One Click Demo Import', 'ekobyte' ),
+            'name'     => esc_html__( 'One Click Demo Import', 'fannava' ),
             'slug'     => 'one-click-demo-import',
             'required' => false,
         ],
         [
-            'name'     =>  esc_html__('MC4WP: Mailchimp for WordPress','ekobyte'),
+            'name'     =>  esc_html__('MC4WP: Mailchimp for WordPress','fannava'),
             'slug'     => 'mailchimp-for-wp',
             'required' => true,
         ],
         [
-            'name'     =>  esc_html__('Kirki Customizer Framework','ekobyte'),
+            'name'     =>  esc_html__('Kirki Customizer Framework','fannava'),
             'slug'     => 'kirki',
             'required' => true,
         ],
         [
-            'name'     =>  esc_html__('Breadcrumb NavXT','ekobyte'),
+            'name'     =>  esc_html__('Breadcrumb NavXT','fannava'),
             'slug'     => 'breadcrumb-navxt',
             'required' => true,
         ]
     ];
     $config = [
-        'id'           => 'ekobyte', // Unique ID for hashing notices for multiple instances of TGMPA.
+        'id'           => 'fannava', // Unique ID for hashing notices for multiple instances of TGMPA.
         'default_path' => '', // Default absolute path to bundled plugins.
         'menu'         => 'tgmpa-install-plugins', // Menu slug.
         'has_notices'  => true, // Show admin notices or not.
@@ -94,65 +94,65 @@ function ekobyte_register_required_plugins() {
         'message'      => '', // Message to output right before the plugins table.
 
         'strings'      => [
-            'page_title'                      => esc_html__( 'Install Required Plugins', 'ekobyte' ),
-            'menu_title'                      => esc_html__( 'Install Plugins', 'ekobyte' ),
-            'installing'                      => esc_html__( 'Installing Plugin: %s', 'ekobyte' ),
-            'updating'                        => esc_html__( 'Updating Plugin: %s', 'ekobyte' ),
-            'oops'                            => esc_html__( 'Something went wrong with the plugin API.', 'ekobyte' ),
+            'page_title'                      => esc_html__( 'Install Required Plugins', 'fannava' ),
+            'menu_title'                      => esc_html__( 'Install Plugins', 'fannava' ),
+            'installing'                      => esc_html__( 'Installing Plugin: %s', 'fannava' ),
+            'updating'                        => esc_html__( 'Updating Plugin: %s', 'fannava' ),
+            'oops'                            => esc_html__( 'Something went wrong with the plugin API.', 'fannava' ),
             'notice_can_install_required'     => _n_noop(
                 'This theme requires the following plugin: %1$s.',
                 'This theme requires the following plugins: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'notice_can_install_recommended'  => _n_noop(
                 'This theme recommends the following plugin: %1$s.',
                 'This theme recommends the following plugins: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'notice_ask_to_update'            => _n_noop(
                 'The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s.',
                 'The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'notice_ask_to_update_maybe'      => _n_noop(
                 'There is an update available for: %1$s.',
                 'There are updates available for the following plugins: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'notice_can_activate_required'    => _n_noop(
                 'The following required plugin is currently inactive: %1$s.',
                 'The following required plugins are currently inactive: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'notice_can_activate_recommended' => _n_noop(
                 'The following recommended plugin is currently inactive: %1$s.',
                 'The following recommended plugins are currently inactive: %1$s.',
-                'ekobyte'
+                'fannava'
             ),
             'install_link'                    => _n_noop(
                 'Begin installing plugin',
                 'Begin installing plugins',
-                'ekobyte'
+                'fannava'
             ),
             'update_link'                     => _n_noop(
                 'Begin updating plugin',
                 'Begin updating plugins',
-                'ekobyte'
+                'fannava'
             ),
             'activate_link'                   => _n_noop(
                 'Begin activating plugin',
                 'Begin activating plugins',
-                'ekobyte'
+                'fannava'
             ),
-            'return'                          => esc_html__( 'Return to Required Plugins Installer', 'ekobyte' ),
-            'plugin_activated'                => esc_html__( 'Plugin activated successfully.', 'ekobyte' ),
-            'activated_successfully'          => esc_html__( 'The following plugin was activated successfully:', 'ekobyte' ),
-            'plugin_already_active'           => esc_html__( 'No action taken. Plugin %1$s was already active.', 'ekobyte' ),
-            'plugin_needs_higher_version'     => esc_html__( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'ekobyte' ),
-            'complete'                        => esc_html__( 'All plugins installed and activated successfully. %1$s', 'ekobyte' ),
-            'dismiss'                         => esc_html__( 'Dismiss this notice', 'ekobyte' ),
-            'notice_cannot_install_activate'  => esc_html__( 'There are one or more required or recommended plugins to install, update or activate.', 'ekobyte' ),
-            'contact_admin'                   => esc_html__( 'Please contact the administrator of this site for help.', 'ekobyte' ),
+            'return'                          => esc_html__( 'Return to Required Plugins Installer', 'fannava' ),
+            'plugin_activated'                => esc_html__( 'Plugin activated successfully.', 'fannava' ),
+            'activated_successfully'          => esc_html__( 'The following plugin was activated successfully:', 'fannava' ),
+            'plugin_already_active'           => esc_html__( 'No action taken. Plugin %1$s was already active.', 'fannava' ),
+            'plugin_needs_higher_version'     => esc_html__( 'Plugin not activated. A higher version of %s is needed for this theme. Please update the plugin.', 'fannava' ),
+            'complete'                        => esc_html__( 'All plugins installed and activated successfully. %1$s', 'fannava' ),
+            'dismiss'                         => esc_html__( 'Dismiss this notice', 'fannava' ),
+            'notice_cannot_install_activate'  => esc_html__( 'There are one or more required or recommended plugins to install, update or activate.', 'fannava' ),
+            'contact_admin'                   => esc_html__( 'Please contact the administrator of this site for help.', 'fannava' ),
             'nag_type'                        => '',
         ],
     ];

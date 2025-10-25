@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 
 if (is_single()) : ?>
@@ -30,7 +30,7 @@ if (is_single()) : ?>
             </div>
             <div class="te-single-post-meta">
                 <div class="te-blog-post-tag">
-                    <?php print ekobyte_get_tag(); ?>
+                    <?php print fannava_get_tag(); ?>
                 </div>
             </div>
         </div>

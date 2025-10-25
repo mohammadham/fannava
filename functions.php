@@ -1,14 +1,14 @@
 <?php
 
 /**
- * ekobyte functions and definitions
+ * fannava functions and definitions
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package ekobyte
+ * @package fannava
  */
 
-if ( !function_exists( 'ekobyte_setup' ) ):
+if ( !function_exists( 'fannava_setup' ) ):
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -16,14 +16,14 @@ if ( !function_exists( 'ekobyte_setup' ) ):
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
-    function ekobyte_setup() {
+    function fannava_setup() {
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on ekobyte, use a find and replace
-         * to change 'ekobyte' to the name of your theme in all the template files.
+         * If you're building a theme based on fannava, use a find and replace
+         * to change 'fannava' to the name of your theme in all the template files.
          */
-        load_theme_textdomain( 'ekobyte', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'fannava', get_template_directory() . '/languages' );
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );
@@ -45,9 +45,9 @@ if ( !function_exists( 'ekobyte_setup' ) ):
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( [
-            'main-menu' => esc_html__( 'Main Menu', 'ekobyte' ),
-            'category-menu' => esc_html__( 'Category Menu', 'ekobyte' ),
-            'footer-menu' => esc_html__( 'Footer Menu', 'ekobyte' ),
+            'main-menu' => esc_html__( 'Main Menu', 'fannava' ),
+            'category-menu' => esc_html__( 'Category Menu', 'fannava' ),
+            'footer-menu' => esc_html__( 'Footer Menu', 'fannava' ),
         ] );
 
         /*
@@ -63,7 +63,7 @@ if ( !function_exists( 'ekobyte_setup' ) ):
         ] );
 
         // Set up the WordPress core custom background feature.
-        add_theme_support( 'custom-background', apply_filters( 'ekobyte_custom_background_args', [
+        add_theme_support( 'custom-background', apply_filters( 'fannava_custom_background_args', [
             'default-color' => 'ffffff',
             'default-image' => '',
         ] ) );
@@ -113,10 +113,10 @@ if ( !function_exists( 'ekobyte_setup' ) ):
 
         remove_theme_support( 'widgets-block-editor' );
 
-        add_image_size( 'ekobyte-case-details', 1170, 600, [ 'center', 'center' ] );
+        add_image_size( 'fannava-case-details', 1170, 600, [ 'center', 'center' ] );
     }
 endif;
-add_action( 'after_setup_theme', 'ekobyte_setup' );
+add_action( 'after_setup_theme', 'fannava_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -125,13 +125,13 @@ add_action( 'after_setup_theme', 'ekobyte_setup' );
  *
  * @global int $content_width
  */
-function ekobyte_content_width() {
+function fannava_content_width() {
     // This variable is intended to be overruled from themes.
     // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
     // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-    $GLOBALS['content_width'] = apply_filters( 'ekobyte_content_width', 640 );
+    $GLOBALS['content_width'] = apply_filters( 'fannava_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'ekobyte_content_width', 0 );
+add_action( 'after_setup_theme', 'fannava_content_width', 0 );
 
 
 
@@ -139,11 +139,11 @@ add_action( 'after_setup_theme', 'ekobyte_content_width', 0 );
  * Enqueue scripts and styles.
  */
 
-define( 'EKOBYTE_THEME_DIR', get_template_directory() );
-define( 'EKOBYTE_THEME_URI', get_template_directory_uri() );
-define( 'EKOBYTE_THEME_CSS_DIR', EKOBYTE_THEME_URI . '/assets/css/' );
-define( 'EKOBYTE_THEME_JS_DIR', EKOBYTE_THEME_URI . '/assets/js/' );
-define( 'EKOBYTE_THEME_INC', EKOBYTE_THEME_DIR . '/inc/' );
+define( 'FANNAVA_THEME_DIR', get_template_directory() );
+define( 'FANNAVA_THEME_URI', get_template_directory_uri() );
+define( 'FANNAVA_THEME_CSS_DIR', FANNAVA_THEME_URI . '/assets/css/' );
+define( 'FANNAVA_THEME_JS_DIR', FANNAVA_THEME_URI . '/assets/js/' );
+define( 'FANNAVA_THEME_INC', FANNAVA_THEME_DIR . '/inc/' );
 
 
 
@@ -157,65 +157,65 @@ if ( !function_exists( 'wp_body_open' ) ) {
 /**
  * Implement the Custom Header feature.
  */
-require EKOBYTE_THEME_INC . 'custom-header.php';
+require FANNAVA_THEME_INC . 'custom-header.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require EKOBYTE_THEME_INC . 'template-functions.php';
+require FANNAVA_THEME_INC . 'template-functions.php';
 
 /**
  * Custom template helper function for this theme.
  */
-require EKOBYTE_THEME_INC . 'template-helper.php';
+require FANNAVA_THEME_INC . 'template-helper.php';
 
 /**
  * initialize kirki customizer class.
  */
-include_once EKOBYTE_THEME_INC . 'kirki-customizer.php';
-include_once EKOBYTE_THEME_INC . 'class-ekobyte-kirki.php';
+include_once FANNAVA_THEME_INC . 'kirki-customizer.php';
+include_once FANNAVA_THEME_INC . 'class-fannava-kirki.php';
 
 /**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
-    require EKOBYTE_THEME_INC . 'jetpack.php';
+    require FANNAVA_THEME_INC . 'jetpack.php';
 }
 
 /**
- * include ekobyte functions file
+ * include fannava functions file
  */
-require_once EKOBYTE_THEME_INC . 'class-navwalker.php';
-require_once EKOBYTE_THEME_INC . 'class-tgm-plugin-activation.php';
-require_once EKOBYTE_THEME_INC . 'add_plugin.php';
-require_once EKOBYTE_THEME_INC . '/common/ekobyte-breadcrumb.php';
-require_once EKOBYTE_THEME_INC . '/common/ekobyte-scripts.php';
-require_once EKOBYTE_THEME_INC . '/common/ekobyte-widgets.php';
+require_once FANNAVA_THEME_INC . 'class-navwalker.php';
+require_once FANNAVA_THEME_INC . 'class-tgm-plugin-activation.php';
+require_once FANNAVA_THEME_INC . 'add_plugin.php';
+require_once FANNAVA_THEME_INC . '/common/fannava-breadcrumb.php';
+require_once FANNAVA_THEME_INC . '/common/fannava-scripts.php';
+require_once FANNAVA_THEME_INC . '/common/fannava-widgets.php';
 
 /**
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
-function ekobyte_pingback_header() {
+function fannava_pingback_header() {
     if ( is_singular() && pings_open() ) {
         printf( '<link rel="pingback" href="%s">', esc_url( get_bloginfo( 'pingback_url' ) ) );
     }
 }
-add_action( 'wp_head', 'ekobyte_pingback_header' );
+add_action( 'wp_head', 'fannava_pingback_header' );
 
 // change textarea position in comment form
 // ----------------------------------------------------------------------------------------
-function ekobyte_move_comment_textarea_to_bottom( $fields ) {
+function fannava_move_comment_textarea_to_bottom( $fields ) {
     $comment_field       = $fields[ 'comment' ];
     unset( $fields[ 'comment' ] );
     $fields[ 'comment' ] = $comment_field;
     return $fields;
 }
-add_filter( 'comment_form_fields', 'ekobyte_move_comment_textarea_to_bottom' );
+add_filter( 'comment_form_fields', 'fannava_move_comment_textarea_to_bottom' );
 
 
-// ekobyte_comment 
-if ( !function_exists( 'ekobyte_comment' ) ) {
-    function ekobyte_comment( $comment, $args, $depth ) {
+// fannava_comment 
+if ( !function_exists( 'fannava_comment' ) ) {
+    function fannava_comment( $comment, $args, $depth ) {
         $GLOBAL['comment'] = $comment;
         extract( $args, EXTR_SKIP );
         $args['reply_text'] = 'Reply';
@@ -242,19 +242,19 @@ if ( !function_exists( 'ekobyte_comment' ) ) {
 /**
  * Replace comment reply link class
  */
-function ekobyte_comment_reply_link_class( $class ) {
+function fannava_comment_reply_link_class( $class ) {
 	$class = str_replace( "class='comment-reply-link", "class='comment-reply-link te-comment-reply", $class );
 	return $class;
 }
 
-add_filter( 'comment_reply_link', 'ekobyte_comment_reply_link_class' );
+add_filter( 'comment_reply_link', 'fannava_comment_reply_link_class' );
 
 
 /**
  * shortcode supports for removing extra p, spance etc
  *
  */
-add_filter( 'the_content', 'ekobyte_shortcode_extra_content_remove' );
+add_filter( 'the_content', 'fannava_shortcode_extra_content_remove' );
 /**
  * Filters the content to remove any extra paragraph or break tags
  * caused by shortcodes.
@@ -264,7 +264,7 @@ add_filter( 'the_content', 'ekobyte_shortcode_extra_content_remove' );
  * @param string $content  String of HTML content.
  * @return string $content Amended string of HTML content.
  */
-function ekobyte_shortcode_extra_content_remove( $content ) {
+function fannava_shortcode_extra_content_remove( $content ) {
 
     $array = [
         '<p>['    => '[',
@@ -275,9 +275,9 @@ function ekobyte_shortcode_extra_content_remove( $content ) {
 
 }
 
-// ekobyte_search_filter_form
-if ( !function_exists( 'ekobyte_search_filter_form' ) ) {
-    function ekobyte_search_filter_form( $form ) {
+// fannava_search_filter_form
+if ( !function_exists( 'fannava_search_filter_form' ) ) {
+    function fannava_search_filter_form( $form ) {
 
         $form = sprintf(
             '<div class="sidebar__widget-px"><div class="search-px"><form class="sidebar__search p-relative" action="%s" method="get">
@@ -286,25 +286,25 @@ if ( !function_exists( 'ekobyte_search_filter_form' ) ) {
 		</form></div></div>',
             esc_url( home_url( '/' ) ),
             esc_attr( get_search_query() ),
-            esc_html__( 'Search', 'ekobyte' )
+            esc_html__( 'Search', 'fannava' )
         );
 
         return $form;
     }
-    add_filter( 'get_search_form', 'ekobyte_search_filter_form' );
+    add_filter( 'get_search_form', 'fannava_search_filter_form' );
 }
 
-add_action( 'admin_enqueue_scripts', 'ekobyte_admin_custom_scripts' );
+add_action( 'admin_enqueue_scripts', 'fannava_admin_custom_scripts' );
 
-function ekobyte_admin_custom_scripts() {
+function fannava_admin_custom_scripts() {
     wp_enqueue_media();
     wp_enqueue_style( 'customizer-style', get_template_directory_uri() . '/inc/css/customizer-style.css',array());
-    wp_register_script( 'ekobyte-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', [ 'jquery' ], '', true );
-    wp_enqueue_script( 'ekobyte-admin-custom' );
+    wp_register_script( 'fannava-admin-custom', get_template_directory_uri() . '/inc/js/admin_custom.js', [ 'jquery' ], '', true );
+    wp_enqueue_script( 'fannava-admin-custom' );
 }
 
 /** Load custom CSS */
-function ekobyte_custom_css() {
+function fannava_custom_css() {
     ?>
     <style type="text/css">
         .who-we-are .left-images .smaill-img::before {
@@ -327,20 +327,20 @@ function ekobyte_custom_css() {
     </style>
     <?php
 }
-add_action('wp_head', 'ekobyte_custom_css');
+add_action('wp_head', 'fannava_custom_css');
 
 /** Plugin register for ocdi */
 function ocdi_register_plugins( $plugins ) {
     $theme_plugins = [
         [
-            'name'         => esc_html__( 'Ekobyte Core ', 'ekobyte' ),
-            'slug'         => 'ekobyte-core',
-            'source'       => esc_url( 'https://techsometimes.com/products/wp/ekobyte-source/ekobyte-core.zip' ),
+            'name'         => esc_html__( 'Fannava Core ', 'fannava' ),
+            'slug'         => 'fannava-core',
+            'source'       => esc_url( 'https://techsometimes.com/products/wp/fannava-source/fannava-core.zip' ),
             'required'     => true,
-            'external_url' => esc_url( 'https://techsometimes.com/products/wp/ekobyte-source/ekobyte-core.zip' ),
+            'external_url' => esc_url( 'https://techsometimes.com/products/wp/fannava-source/fannava-core.zip' ),
         ],
         [
-            'name'     => esc_html__( 'Elementor Page Builder', 'ekobyte' ),
+            'name'     => esc_html__( 'Elementor Page Builder', 'fannava' ),
             'slug'     => 'elementor',
             'required' => true,
         ],
@@ -351,32 +351,32 @@ function ocdi_register_plugins( $plugins ) {
             'required' => true,                     // If the plugin is required or not.
         ],
         [
-            'name'     => esc_html__( 'ACF Photo Gallery Field', 'ekobyte' ),
+            'name'     => esc_html__( 'ACF Photo Gallery Field', 'fannava' ),
             'slug'     => 'navz-photo-gallery',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'WP Classic Editor', 'ekobyte' ),
+            'name'     => esc_html__( 'WP Classic Editor', 'fannava' ),
             'slug'     => 'classic-editor',
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'Contact Form 7', 'ekobyte' ),
+            'name'     => esc_html__( 'Contact Form 7', 'fannava' ),
             'slug'     => 'contact-form-7',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'One Click Demo Import', 'ekobyte' ),
+            'name'     => esc_html__( 'One Click Demo Import', 'fannava' ),
             'slug'     => 'one-click-demo-import',
             'required' => false,
         ],
         array(
-            'name'     =>  esc_html__('Kirki Customizer Framework','ekobyte'),
+            'name'     =>  esc_html__('Kirki Customizer Framework','fannava'),
             'slug'     => 'kirki',
             'required' => true,
         ), 
         array(
-            'name'     =>  esc_html__('Breadcrumb NavXT','ekobyte'),
+            'name'     =>  esc_html__('Breadcrumb NavXT','fannava'),
             'slug'     => 'breadcrumb-navxt',
             'required' => true,
         )    

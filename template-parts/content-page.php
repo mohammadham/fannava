@@ -2,11 +2,11 @@
 <?php
     the_content();
     wp_link_pages( [
-        'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'ekobyte' ) . '</span>',
+        'before'      => '<div class="page-links"><span class="page-links-title">' . esc_html__( 'Pages:', 'fannava' ) . '</span>',
         'after'       => '</div>',
         'link_before' => '<span>',
         'link_after'  => '</span>',
-        'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'ekobyte' ) . ' </span>%',
+        'pagelink'    => '<span class="screen-reader-text">' . esc_html__( 'Page', 'fannava' ) . ' </span>%',
         'separator'   => '<span class="screen-reader-text"> </span>',
     ] );
 

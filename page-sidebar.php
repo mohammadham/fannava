@@ -2,7 +2,7 @@
 
 /**
  * Template Name: Page Sidebar
- * @package ekobyte
+ * @package fannava
  */
 
 get_header();
@@ -15,7 +15,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
     <div class="container">
 		<div class="row">
 			<div class="col-lg-<?php print esc_attr( $blog_column );?>">
-				<div class="ekobyte-page-content">
+				<div class="fannava-page-content">
 					<?php
 						if ( have_posts() ):
 							while ( have_posts() ): the_post();

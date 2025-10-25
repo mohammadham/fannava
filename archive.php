@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package ekobyte
+ * @package fannava
  */
 
 get_header();
@@ -39,7 +39,7 @@ $blog_column = is_active_sidebar('blog-sidebar') ? 8 : 12;
 					endwhile;
 					?>
 					<div class="te-basic-pagination">
-						<?php ekobyte_pagination('<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>', '', ['class' => '']); ?>
+						<?php fannava_pagination('<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>', '', ['class' => '']); ?>
 					</div>
 				<?php
 				else :
