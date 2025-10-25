@@ -8,7 +8,7 @@
  * @package fannava
  */
 
-$fannava_blog_btn = get_theme_mod( 'fannava_blog_btn', 'Learn More' );
+$fannava_blog_btn = get_theme_mod( 'fannava_blog_btn', 'ادامه مطلب' );
 $fannava_blog_btn_switch = get_theme_mod( 'fannava_blog_btn_switch', true );
 
 ?>

@@ -1,0 +1,14 @@
+/*!
+Theme Name: Fannava
+Template: fannava
+Description: Fannava – IT Service & Technology WordPress Theme (RTL Version)
+Version: 1.0.0
+Author: themeearth
+Text Domain: fannava
+*/
+
+/* Import Shabnam Font */
+@import url('assets/css/shabnam-font.css');
+
+/* Import RTL Styles */
+@import url('assets/css/fannava-rtl.css');

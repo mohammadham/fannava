@@ -32,7 +32,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 					<?php if ( get_previous_post_link() ): ?>
 						<div class="te-post-navigation">
 							<div class="theme-navigation b-next-post text-left">
-								<span><?php print esc_html__( 'Prev Post', 'fannava' );?></span>
+								<span><?php print esc_html__( 'مطلب قبلی', 'fannava' );?></span>
 								<h4><?php print get_previous_post_link( '%link ', '%title' );?></h4>
 							</div>
 						</div>
@@ -40,7 +40,7 @@ $blog_column = is_active_sidebar( 'blog-sidebar' ) ? 8 : 12;
 					<?php if ( get_next_post_link() ): ?>
 						<div class="te-post-navigation">
 							<div class="theme-navigation b-next-post text-left text-md-right">
-								<span><?php print esc_html__( 'Next Post', 'fannava' );?></span>
+								<span><?php print esc_html__( 'مطلب بعدی', 'fannava' );?></span>
 								<h4><?php print get_next_post_link( '%link ', '%title' );?></h4>
 							</div>
 						</div>

@@ -7,10 +7,10 @@
 function fannava_scripts() {
 
     
-    // google fonts
-    wp_enqueue_style( 'fannava-fonts', fannava_fonts_url(), array(), '1.0.0' );
-    // all css
+    // Shabnam Persian Font
+    wp_enqueue_style( 'shabnam-font', FANNAVA_THEME_CSS_DIR.'shabnam-font.css', array(), '1.0.0' );
     
+    // all css
     wp_enqueue_style( 'bootstrap', FANNAVA_THEME_CSS_DIR.'bootstrap.min.css', array() );
     wp_enqueue_style( 'fontawesome', FANNAVA_THEME_CSS_DIR.'fontawesome.min.css', array() );
     wp_enqueue_style( 'magnific-popup', FANNAVA_THEME_CSS_DIR.'magnific-popup.css', array() );
@@ -20,6 +20,10 @@ function fannava_scripts() {
     wp_enqueue_style( 'animate', FANNAVA_THEME_CSS_DIR.'animate.css', array() );
     wp_enqueue_style( 'fannava-core', FANNAVA_THEME_CSS_DIR . 'fannava-core.css', [], time() );
     wp_enqueue_style( 'fannava-style', get_stylesheet_uri() );
+    
+    // RTL Support
+    wp_enqueue_style( 'fannava-rtl', FANNAVA_THEME_CSS_DIR.'fannava-rtl.css', array(), '1.0.0' );
+    wp_style_add_data( 'fannava-rtl', 'rtl', 'replace' );
 
     // all js
    

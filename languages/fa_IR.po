@@ -1,0 +1,434 @@
+# Translation of Fannava Theme in Persian
+# This file is distributed under the same license as the Fannava Theme package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Fannava 1.0.0\n"
+"Report-Msgid-Bugs-To: https://themeforest.net/user/themeearth\n"
+"POT-Creation-Date: 2025-01-01 12:00:00+0000\n"
+"PO-Revision-Date: 2025-01-01 12:00:00+0000\n"
+"Last-Translator: \n"
+"Language-Team: Persian\n"
+"Language: fa_IR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Manual\n"
+
+#: functions.php:48
+msgid "Main Menu"
+msgstr "منوی اصلی"
+
+#: functions.php:49
+msgid "Category Menu"
+msgstr "منوی دسته‌بندی"
+
+#: functions.php:50
+msgid "Footer Menu"
+msgstr "منوی فوتر"
+
+#: functions.php:221
+msgid "Reply"
+msgstr "پاسخ"
+
+#: functions.php:289
+msgid "Search"
+msgstr "جستجو"
+
+#: functions.php:336
+msgid "Fannava Core"
+msgstr "هسته فناوا"
+
+#: functions.php:343
+msgid "Elementor Page Builder"
+msgstr "المنتور صفحه ساز"
+
+#: functions.php:349
+msgid "Advanced Custom Fields"
+msgstr "فیلدهای سفارشی پیشرفته"
+
+#: functions.php:355
+msgid "ACF Photo Gallery Field"
+msgstr "گالری عکس ACF"
+
+#: functions.php:360
+msgid "WP Classic Editor"
+msgstr "ویرایشگر کلاسیک وردپرس"
+
+#: functions.php:365
+msgid "Contact Form 7"
+msgstr "فرم تماس ۷"
+
+#: functions.php:370
+msgid "One Click Demo Import"
+msgstr "نصب دمو با یک کلیک"
+
+#: functions.php:374
+msgid "Kirki Customizer Framework"
+msgstr "فریمورک شخصی‌سازی کرکی"
+
+#: functions.php:379
+msgid "Breadcrumb NavXT"
+msgstr "مسیریاب مسیر"
+
+#: comments.php
+msgid "Comments"
+msgstr "نظرات"
+
+msgid "Leave a Comment"
+msgstr "ارسال نظر"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Email"
+msgstr "ایمیل"
+
+msgid "Website"
+msgstr "وبسایت"
+
+msgid "Comment"
+msgstr "نظر"
+
+msgid "Submit"
+msgstr "ارسال"
+
+msgid "Previous"
+msgstr "قبلی"
+
+msgid "Next"
+msgstr "بعدی"
+
+msgid "Read More"
+msgstr "ادامه مطلب"
+
+msgid "Posted on"
+msgstr "منتشر شده در"
+
+msgid "Posted by"
+msgstr "نوشته شده توسط"
+
+msgid "Categories"
+msgstr "دسته‌بندی‌ها"
+
+msgid "Tags"
+msgstr "برچسب‌ها"
+
+msgid "Author"
+msgstr "نویسنده"
+
+msgid "Published"
+msgstr "منتشر شده"
+
+msgid "Updated"
+msgstr "به‌روزرسانی شده"
+
+msgid "Home"
+msgstr "خانه"
+
+msgid "About"
+msgstr "درباره ما"
+
+msgid "Services"
+msgstr "خدمات"
+
+msgid "Portfolio"
+msgstr "نمونه کارها"
+
+msgid "Blog"
+msgstr "وبلاگ"
+
+msgid "Contact"
+msgstr "تماس با ما"
+
+msgid "Contact Us"
+msgstr "تماس با ما"
+
+msgid "Get in Touch"
+msgstr "در ارتباط باشید"
+
+msgid "Phone"
+msgstr "تلفن"
+
+msgid "Address"
+msgstr "آدرس"
+
+msgid "Follow Us"
+msgstr "ما را دنبال کنید"
+
+msgid "Quick Links"
+msgstr "لینک‌های سریع"
+
+msgid "Recent Posts"
+msgstr "مطالب اخیر"
+
+msgid "Archives"
+msgstr "آرشیو"
+
+msgid "Copyright"
+msgstr "کلیه حقوق محفوظ است"
+
+msgid "All Rights Reserved"
+msgstr "تمامی حقوق محفوظ است"
+
+msgid "View All"
+msgstr "مشاهده همه"
+
+msgid "Load More"
+msgstr "بارگذاری بیشتر"
+
+msgid "Back to Home"
+msgstr "بازگشت به خانه"
+
+msgid "404 - Page Not Found"
+msgstr "۴۰۴ - صفحه یافت نشد"
+
+msgid "Sorry, the page you are looking for does not exist."
+msgstr "متاسفیم، صفحه مورد نظر شما یافت نشد."
+
+msgid "Go to Homepage"
+msgstr "بازگشت به صفحه اصلی"
+
+msgid "Subscribe"
+msgstr "عضویت"
+
+msgid "Subscribe to Newsletter"
+msgstr "عضویت در خبرنامه"
+
+msgid "Enter your email"
+msgstr "ایمیل خود را وارد کنید"
+
+msgid "Share this"
+msgstr "اشتراک‌گذاری"
+
+msgid "Share on Facebook"
+msgstr "اشتراک در فیسبوک"
+
+msgid "Share on Twitter"
+msgstr "اشتراک در توییتر"
+
+msgid "Share on LinkedIn"
+msgstr "اشتراک در لینکدین"
+
+msgid "No results found"
+msgstr "نتیجه‌ای یافت نشد"
+
+msgid "Try searching again"
+msgstr "دوباره جستجو کنید"
+
+msgid "Popular Posts"
+msgstr "مطالب محبوب"
+
+msgid "Featured"
+msgstr "ویژه"
+
+msgid "Latest News"
+msgstr "آخرین اخبار"
+
+msgid "Our Team"
+msgstr "تیم ما"
+
+msgid "Meet the Team"
+msgstr "با تیم ما آشنا شوید"
+
+msgid "Testimonials"
+msgstr "نظرات مشتریان"
+
+msgid "What Clients Say"
+msgstr "نظر مشتریان"
+
+msgid "Get Started"
+msgstr "شروع کنید"
+
+msgid "Learn More"
+msgstr "ادامه مطلب"
+
+msgid "Download"
+msgstr "دانلود"
+
+msgid "Upload"
+msgstr "آپلود"
+
+msgid "Save"
+msgstr "ذخیره"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Cancel"
+msgstr "لغو"
+
+msgid "Close"
+msgstr "بستن"
+
+msgid "Open"
+msgstr "باز کردن"
+
+msgid "Yes"
+msgstr "بله"
+
+msgid "No"
+msgstr "خیر"
+
+msgid "OK"
+msgstr "تایید"
+
+msgid "Apply"
+msgstr "اعمال"
+
+msgid "Reset"
+msgstr "بازنشانی"
+
+msgid "Clear"
+msgstr "پاک کردن"
+
+msgid "Select"
+msgstr "انتخاب"
+
+msgid "Choose"
+msgstr "انتخاب کنید"
+
+msgid "Browse"
+msgstr "مرور"
+
+msgid "Required"
+msgstr "الزامی"
+
+msgid "Optional"
+msgstr "اختیاری"
+
+msgid "Loading..."
+msgstr "در حال بارگذاری..."
+
+msgid "Please wait..."
+msgstr "لطفا صبر کنید..."
+
+msgid "Success"
+msgstr "موفق"
+
+msgid "Error"
+msgstr "خطا"
+
+msgid "Warning"
+msgstr "هشدار"
+
+msgid "Information"
+msgstr "اطلاعات"
+
+msgid "Message sent successfully"
+msgstr "پیام با موفقیت ارسال شد"
+
+msgid "Please fill all required fields"
+msgstr "لطفا تمام فیلدهای الزامی را پر کنید"
+
+msgid "Invalid email address"
+msgstr "آدرس ایمیل نامعتبر است"
+
+msgid "Page"
+msgstr "صفحه"
+
+msgid "of"
+msgstr "از"
+
+msgid "View Details"
+msgstr "مشاهده جزئیات"
+
+msgid "Show More"
+msgstr "نمایش بیشتر"
+
+msgid "Show Less"
+msgstr "نمایش کمتر"
+
+#: comments.php:26
+msgid " Comments Found"
+msgstr " نظر یافت شد"
+
+msgid " Comment Found"
+msgstr " نظر یافت شد"
+
+msgid "Comment navigation"
+msgstr "ناوبری نظرات"
+
+msgid "&larr; Older "
+msgstr "&larr; قدیمی‌تر "
+
+msgid "Newer &rarr;"
+msgstr "جدیدتر &rarr;"
+
+msgid "Enter Name"
+msgstr "نام را وارد کنید"
+
+msgid "Enter Email"
+msgstr "ایمیل را وارد کنید"
+
+msgid "Enter Website"
+msgstr "وبسایت را وارد کنید"
+
+msgid "Enter Your Comments"
+msgstr "نظر خود را وارد کنید"
+
+msgid "Post Comment"
+msgstr "ارسال نظر"
+
+msgid "You must be"
+msgstr "شما باید"
+
+msgid "logged in"
+msgstr "وارد شوید"
+
+msgid "to post a comment."
+msgstr "تا بتوانید نظر بگذارید."
+
+msgid "Logged in as"
+msgstr "وارد شده به عنوان"
+
+msgid "Log out of this account"
+msgstr "خروج از این حساب"
+
+msgid "Log out?"
+msgstr "خروج؟"
+
+msgid "Add a Comment"
+msgstr "افزودن نظر"
+
+msgid "Leave a Reply to %s"
+msgstr "پاسخ به %s"
+
+msgid "   Cancel reply"
+msgstr "   لغو پاسخ"
+
+#: 404.php
+msgid "Page not found"
+msgstr "صفحه یافت نشد"
+
+msgid "Back To Home"
+msgstr "بازگشت به خانه"
+
+msgid "Oops! The page you are looking for does not exist. It might have been moved or deleted."
+msgstr "اوه! صفحه‌ای که به دنبال آن هستید وجود ندارد. ممکن است منتقل یا حذف شده باشد."
+
+msgid "Error 404"
+msgstr "خطای ۴۰۴"
+
+#: single.php
+msgid "Prev Post"
+msgstr "مطلب قبلی"
+
+msgid "Next Post"
+msgstr "مطلب بعدی"
+
+#: header-1.php
+msgid "(629) 555-0129"
+msgstr "۰۲۱-۱۲۳۴۵۶۷۸"
+
+msgid "6391 Elgin St. Celina, 10299"
+msgstr "تهران، خیابان ولیعصر"
+
+msgid "Get a Quote"
+msgstr "درخواست مشاوره"
+
+msgid "Contact Info"
+msgstr "اطلاعات تماس"

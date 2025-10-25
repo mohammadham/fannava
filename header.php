@@ -11,7 +11,7 @@
 ?>
 
 <!doctype html>
-<html <?php language_attributes();?>>
+<html <?php language_attributes();?> dir="rtl" lang="fa">
 <head>
 	<meta charset="<?php bloginfo( 'charset' );?>">
     <?php if ( is_singular() && pings_open( get_queried_object() ) ): ?>

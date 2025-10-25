@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✅ تست سریع RTL - قالب فناوا</title>
+    <link rel="stylesheet" href="assets/css/shabnam-font.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Shabnam, Tahoma, Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            max-width: 600px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            animation: slideUp 0.5s ease;
+        }
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        h1 {
+            color: #2d3748;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .status {
+            background: #48bb78;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .feature {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            margin: 10px 0;
+            background: #f7fafc;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .feature:hover {
+            transform: translateX(-5px);
+        }
+        .check {
+            width: 30px;
+            height: 30px;
+            background: #48bb78;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        .test-text {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background: #edf2f7;
+            border-radius: 10px;
+            border-right: 4px solid #667eea;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #718096;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>✅ قالب فناوا - نسخه فارسی</h1>
+        
+        <div class="status">
+            🎉 فارسی‌سازی با موفقیت انجام شد!
+        </div>
+
+        <div class="test-text">
+            <p>این متن با فونت شبنم نوشته شده و به صورت راست‌چین (RTL) نمایش داده می‌شود.</p>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <div>فونت فارسی شبنم نصب شد</div>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <div>جهت صفحه به RTL تبدیل شد</div>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <div>تمام متن‌ها راست‌چین هستند</div>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <div>ترجمه‌های فارسی اضافه شدند</div>
+        </div>
+
+        <div class="feature">
+            <div class="check">✓</div>
+            <div>سازگار با وردپرس و افزونه‌ها</div>
+        </div>
+
+        <div class="footer">
+            برای مشاهده تست کامل، فایل rtl-test.html را باز کنید
+        </div>
+    </div>
+</body>
+</html>

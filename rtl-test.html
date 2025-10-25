@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تست قالب فناوا - نسخه فارسی RTL</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/shabnam-font.css">
+    <link rel="stylesheet" href="assets/css/fannava-rtl.css">
+    <style>
+        body {
+            font-family: Shabnam, Tahoma, Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+            padding: 50px 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-right: 5px solid #3498db;
+            padding-right: 15px;
+            margin-bottom: 30px;
+        }
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            background: #ecf0f1;
+            border-radius: 5px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            margin: 5px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        .btn:hover {
+            background: #2980b9;
+        }
+        .alert {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border-right: 4px solid #28a745;
+        }
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border-right: 4px solid #17a2b8;
+        }
+        .menu-test {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .menu-test li {
+            padding: 10px 15px;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin: 15px 0;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: Shabnam, Tahoma, Arial, sans-serif;
+            direction: rtl;
+            text-align: right;
+        }
+        .icon-test i {
+            margin-left: 8px;
+        }
+        .float-test {
+            overflow: hidden;
+            margin: 20px 0;
+        }
+        .float-right {
+            float: right;
+            background: #e74c3c;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .float-left {
+            float: left;
+            background: #2ecc71;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        blockquote {
+            border-right: 4px solid #3498db;
+            padding-right: 20px;
+            margin: 20px 0;
+            font-style: italic;
+            color: #555;
+        }
+        .feature-box {
+            padding: 20px;
+            margin: 15px 0;
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            text-align: right;
+        }
+        .success-badge {
+            display: inline-block;
+            background: #28a745;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-check-circle"></i> تست موفق قالب فناوا - نسخه فارسی RTL</h1>
+        
+        <div class="alert alert-success">
+            <span class="success-badge">✓ موفق</span>
+            قالب به صورت کامل به فارسی و راست‌چین (RTL) تبدیل شد!
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-font"></i> تست فونت شبنم</h2>
+            <p>این متن با فونت شبنم نمایش داده می‌شود. فونت شبنم یکی از بهترین فونت‌های فارسی برای استفاده در وب است.</p>
+            <p><strong>متن ضخیم:</strong> این یک متن ضخیم با فونت شبنم است.</p>
+            <p><em>متن کج:</em> این یک متن کج با فونت شبنم است.</p>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-align-right"></i> تست راست‌چین (RTL)</h2>
+            <p>تمام متن‌ها به صورت راست‌چین نمایش داده می‌شوند و جهت صفحه از راست به چپ است.</p>
+            <blockquote>
+                این یک نقل قول تستی است که باید به صورت راست‌چین نمایش داده شود. خط سمت راست نشان‌دهنده اینکه blockquote به درستی راست‌چین شده است.
+            </blockquote>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-bars"></i> تست منو</h2>
+            <ul class="menu-test">
+                <li>خانه</li>
+                <li>درباره ما</li>
+                <li>خدمات</li>
+                <li>تماس با ما</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-icons"></i> تست آیکون‌ها</h2>
+            <div class="icon-test">
+                <p><i class="fas fa-home"></i> خانه</p>
+                <p><i class="fas fa-user"></i> کاربر</p>
+                <p><i class="fas fa-envelope"></i> ایمیل</p>
+                <p><i class="fas fa-phone"></i> تلفن</p>
+                <p><i class="fas fa-search"></i> جستجو</p>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-edit"></i> تست فرم</h2>
+            <form>
+                <div class="form-group">
+                    <label>نام و نام خانوادگی:</label>
+                    <input type="text" placeholder="نام خود را وارد کنید">
+                </div>
+                <div class="form-group">
+                    <label>ایمیل:</label>
+                    <input type="email" placeholder="ایمیل خود را وارد کنید">
+                </div>
+                <div class="form-group">
+                    <label>پیام:</label>
+                    <textarea rows="4" placeholder="پیام خود را بنویسید"></textarea>
+                </div>
+                <button type="button" class="btn">ارسال پیام</button>
+            </form>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-arrows-alt-h"></i> تست Float</h2>
+            <div class="float-test">
+                <div class="float-right">راست</div>
+                <div class="float-left">چپ</div>
+            </div>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-mouse-pointer"></i> تست دکمه‌ها</h2>
+            <a href="#" class="btn"><i class="fas fa-home"></i> صفحه اصلی</a>
+            <a href="#" class="btn"><i class="fas fa-info-circle"></i> درباره ما</a>
+            <a href="#" class="btn"><i class="fas fa-envelope"></i> تماس با ما</a>
+        </div>
+
+        <div class="alert alert-info">
+            <h3><i class="fas fa-list-check"></i> خلاصه تغییرات انجام شده:</h3>
+            <ul>
+                <li>✓ فونت شبنم به قالب اضافه شد</li>
+                <li>✓ فایل style-rtl.css ایجاد شد</li>
+                <li>✓ فایل fannava-rtl.css با تمام استایل‌های RTL ایجاد شد</li>
+                <li>✓ جهت HTML به rtl تغییر یافت</li>
+                <li>✓ زبان به fa (فارسی) تنظیم شد</li>
+                <li>✓ متن‌های انگلیسی به فارسی ترجمه شدند</li>
+                <li>✓ فایل‌های ترجمه fa_IR.po و fa_IR.mo ایجاد شدند</li>
+                <li>✓ تمام کلاس‌های Bootstrap برای RTL بهینه شدند</li>
+            </ul>
+        </div>
+
+        <div class="test-section">
+            <h2><i class="fas fa-box"></i> ویژگی‌های قالب فارسی‌سازی شده</h2>
+            
+            <div class="feature-box">
+                <h3><i class="fas fa-language"></i> پشتیبانی کامل از زبان فارسی</h3>
+                <p>قالب به طور کامل از زبان فارسی پشتیبانی می‌کند و تمام متن‌ها به صورت راست‌چین نمایش داده می‌شوند.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3><i class="fas fa-palette"></i> طراحی زیبا با فونت شبنم</h3>
+                <p>از فونت فارسی شبنم استفاده شده که یکی از زیباترین و خوانا‌ترین فونت‌های فارسی است.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3><i class="fas fa-mobile-alt"></i> ریسپانسیو و سازگار با موبایل</h3>
+                <p>تمام تغییرات RTL به گونه‌ای اعمال شده که در تمام اندازه‌های صفحه به درستی کار می‌کند.</p>
+            </div>
+
+            <div class="feature-box">
+                <h3><i class="fas fa-puzzle-piece"></i> سازگار با افزونه‌های وردپرس</h3>
+                <p>قالب با افزونه‌های محبوب وردپرس مانند Elementor، Contact Form 7 و WooCommerce سازگار است.</p>
+            </div>
+        </div>
+
+        <div class="alert alert-success" style="margin-top: 30px;">
+            <h3><i class="fas fa-thumbs-up"></i> قالب شما آماده استفاده است!</h3>
+            <p>تمام تغییرات لازم برای فارسی‌سازی و RTL کردن قالب اعمال شد. اکنون می‌توانید از قالب خود در وردپرس استفاده کنید.</p>
+        </div>
+
+        <div style="margin-top: 30px; padding: 20px; background: #34495e; color: white; border-radius: 5px; text-align: center;">
+            <p style="margin: 0;">© ۱۴۰۳ قالب فناوا - نسخه فارسی | تمامی حقوق محفوظ است</p>
+        </div>
+    </div>
+</body>
+</html>

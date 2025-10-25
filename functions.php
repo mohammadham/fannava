@@ -45,9 +45,9 @@ if ( !function_exists( 'fannava_setup' ) ):
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( [
-            'main-menu' => esc_html__( 'Main Menu', 'fannava' ),
-            'category-menu' => esc_html__( 'Category Menu', 'fannava' ),
-            'footer-menu' => esc_html__( 'Footer Menu', 'fannava' ),
+            'main-menu' => esc_html__( 'منوی اصلی', 'fannava' ),
+            'category-menu' => esc_html__( 'منوی دسته‌بندی', 'fannava' ),
+            'footer-menu' => esc_html__( 'منوی فوتر', 'fannava' ),
         ] );
 
         /*
@@ -218,7 +218,7 @@ if ( !function_exists( 'fannava_comment' ) ) {
     function fannava_comment( $comment, $args, $depth ) {
         $GLOBAL['comment'] = $comment;
         extract( $args, EXTR_SKIP );
-        $args['reply_text'] = 'Reply';
+        $args['reply_text'] = 'پاسخ';
         $replayClass = 'comment-depth-' . esc_attr( $depth );
         ?>
             <li id="comment-<?php comment_ID();?>" class="comment">
@@ -286,7 +286,7 @@ if ( !function_exists( 'fannava_search_filter_form' ) ) {
 		</form></div></div>',
             esc_url( home_url( '/' ) ),
             esc_attr( get_search_query() ),
-            esc_html__( 'Search', 'fannava' )
+            esc_html__( 'جستجو', 'fannava' )
         );
 
         return $form;
@@ -333,50 +333,50 @@ add_action('wp_head', 'fannava_custom_css');
 function ocdi_register_plugins( $plugins ) {
     $theme_plugins = [
         [
-            'name'         => esc_html__( 'Fannava Core ', 'fannava' ),
+            'name'         => esc_html__( 'هسته فناوا', 'fannava' ),
             'slug'         => 'fannava-core',
             'source'       => esc_url( 'https://techsometimes.com/products/wp/fannava-source/fannava-core.zip' ),
             'required'     => true,
             'external_url' => esc_url( 'https://techsometimes.com/products/wp/fannava-source/fannava-core.zip' ),
         ],
         [
-            'name'     => esc_html__( 'Elementor Page Builder', 'fannava' ),
+            'name'     => esc_html__( 'المنتور صفحه ساز', 'fannava' ),
             'slug'     => 'elementor',
             'required' => true,
         ],
         
         [ // A WordPress.org plugin repository example.
-            'name'     => 'Advanced Custom Fields', // Name of the plugin.
+            'name'     => 'فیلدهای سفارشی پیشرفته', // Name of the plugin.
             'slug'     => 'advanced-custom-fields', // Plugin slug - the same as on WordPress.org plugin repository.
             'required' => true,                     // If the plugin is required or not.
         ],
         [
-            'name'     => esc_html__( 'ACF Photo Gallery Field', 'fannava' ),
+            'name'     => esc_html__( 'گالری عکس ACF', 'fannava' ),
             'slug'     => 'navz-photo-gallery',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'WP Classic Editor', 'fannava' ),
+            'name'     => esc_html__( 'ویرایشگر کلاسیک وردپرس', 'fannava' ),
             'slug'     => 'classic-editor',
             'required' => false,
         ],
         [
-            'name'     => esc_html__( 'Contact Form 7', 'fannava' ),
+            'name'     => esc_html__( 'فرم تماس ۷', 'fannava' ),
             'slug'     => 'contact-form-7',
             'required' => true,
         ],
         [
-            'name'     => esc_html__( 'One Click Demo Import', 'fannava' ),
+            'name'     => esc_html__( 'نصب دمو با یک کلیک', 'fannava' ),
             'slug'     => 'one-click-demo-import',
             'required' => false,
         ],
         array(
-            'name'     =>  esc_html__('Kirki Customizer Framework','fannava'),
+            'name'     =>  esc_html__('فریمورک شخصی‌سازی کرکی','fannava'),
             'slug'     => 'kirki',
             'required' => true,
         ), 
         array(
-            'name'     =>  esc_html__('Breadcrumb NavXT','fannava'),
+            'name'     =>  esc_html__('مسیریاب مسیر','fannava'),
             'slug'     => 'breadcrumb-navxt',
             'required' => true,
         )    

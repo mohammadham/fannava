@@ -9,9 +9,9 @@
 */
 
 // info
-$fannava_phone_num = get_theme_mod( 'fannava_phone_num', __( '(629) 555-0129', 'fannava' ) );
+$fannava_phone_num = get_theme_mod( 'fannava_phone_num', __( '۰۲۱-۱۲۳۴۵۶۷۸', 'fannava' ) );
 $fannava_mail_id = get_theme_mod( 'fannava_mail_id', __( 'info@example.com', 'fannava' ) );
-$fannava_address = get_theme_mod( 'fannava_address', __( '6391 Elgin St. Celina, 10299', 'fannava' ) );
+$fannava_address = get_theme_mod( 'fannava_address', __( 'تهران، خیابان ولیعصر', 'fannava' ) );
 $fannava_address_url = get_theme_mod( 'fannava_address_url', __( 'https://goo.gl/maps/qzqY2PAcQwUz1BYN9', 'fannava' ) );
 
 // social setting
@@ -24,11 +24,11 @@ $fannava_pinterest_url = get_theme_mod( 'fannava_pinterest_url', __( 'https://ww
 
 // header right
 $fannava_right_contact_switch = get_theme_mod( 'fannava_right_contact_switch', false );
-$fannava_button_text = get_theme_mod( 'fannava_button_text', __( 'Get a Quote', 'fannava' ) );
+$fannava_button_text = get_theme_mod( 'fannava_button_text', __( 'درخواست مشاوره', 'fannava' ) );
 $fannava_button_link = get_theme_mod( 'fannava_button_link', __( '#', 'fannava' ) );
 
 // side info
-$fannava_side_info_title = get_theme_mod( 'fannava_side_info_title', __( 'Contact Info', 'fannava' ) );
+$fannava_side_info_title = get_theme_mod( 'fannava_side_info_title', __( 'اطلاعات تماس', 'fannava' ) );
 $fannava_side_info_social_switch = get_theme_mod( 'fannava_side_info_social_switch', false );
 
 ?>

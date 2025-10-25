@@ -1,0 +1,883 @@
+/**
+ * Fannava RTL Styles
+ * Right-to-Left Support for Persian/Farsi Language
+ */
+
+/* Global RTL Settings */
+body {
+    direction: rtl;
+    text-align: right;
+    font-family: Shabnam, Tahoma, Arial, sans-serif !important;
+}
+
+* {
+    font-family: Shabnam, Tahoma, Arial, sans-serif !important;
+}
+
+/* Text Alignment */
+.text-left {
+    text-align: right !important;
+}
+
+.text-right {
+    text-align: left !important;
+}
+
+/* Float */
+.float-left {
+    float: right !important;
+}
+
+.float-right {
+    float: left !important;
+}
+
+/* Margins */
+.mr-0 { margin-left: 0 !important; margin-right: auto !important; }
+.mr-1 { margin-left: 0.25rem !important; margin-right: auto !important; }
+.mr-2 { margin-left: 0.5rem !important; margin-right: auto !important; }
+.mr-3 { margin-left: 1rem !important; margin-right: auto !important; }
+.mr-4 { margin-left: 1.5rem !important; margin-right: auto !important; }
+.mr-5 { margin-left: 3rem !important; margin-right: auto !important; }
+
+.ml-0 { margin-right: 0 !important; margin-left: auto !important; }
+.ml-1 { margin-right: 0.25rem !important; margin-left: auto !important; }
+.ml-2 { margin-right: 0.5rem !important; margin-left: auto !important; }
+.ml-3 { margin-right: 1rem !important; margin-left: auto !important; }
+.ml-4 { margin-right: 1.5rem !important; margin-left: auto !important; }
+.ml-5 { margin-right: 3rem !important; margin-left: auto !important; }
+
+.ml-auto { margin-right: auto !important; margin-left: 0 !important; }
+.mr-auto { margin-left: auto !important; margin-right: 0 !important; }
+
+/* Paddings */
+.pr-0 { padding-left: 0 !important; padding-right: auto !important; }
+.pr-1 { padding-left: 0.25rem !important; padding-right: auto !important; }
+.pr-2 { padding-left: 0.5rem !important; padding-right: auto !important; }
+.pr-3 { padding-left: 1rem !important; padding-right: auto !important; }
+.pr-4 { padding-left: 1.5rem !important; padding-right: auto !important; }
+.pr-5 { padding-left: 3rem !important; padding-right: auto !important; }
+
+.pl-0 { padding-right: 0 !important; padding-left: auto !important; }
+.pl-1 { padding-right: 0.25rem !important; padding-left: auto !important; }
+.pl-2 { padding-right: 0.5rem !important; padding-left: auto !important; }
+.pl-3 { padding-right: 1rem !important; padding-left: auto !important; }
+.pl-4 { padding-right: 1.5rem !important; padding-left: auto !important; }
+.pl-5 { padding-right: 3rem !important; padding-left: auto !important; }
+
+/* Border Radius */
+.rounded-left {
+    border-top-right-radius: 0.25rem !important;
+    border-bottom-right-radius: 0.25rem !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.rounded-right {
+    border-top-left-radius: 0.25rem !important;
+    border-bottom-left-radius: 0.25rem !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+/* Navigation & Menu */
+.navbar-nav {
+    padding-right: 0;
+}
+
+.dropdown-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.dropdown-toggle::after {
+    margin-right: 0.255em;
+    margin-left: 0;
+}
+
+/* Lists */
+ul, ol {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+li {
+    text-align: right;
+}
+
+/* Forms */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="search"],
+textarea,
+select {
+    text-align: right;
+    direction: rtl;
+}
+
+.form-control {
+    text-align: right;
+    direction: rtl;
+}
+
+/* Buttons */
+.btn {
+    text-align: center;
+}
+
+/* Breadcrumbs */
+.breadcrumb {
+    direction: rtl;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-right: 0;
+    padding-left: 0.5rem;
+}
+
+/* Cards */
+.card {
+    text-align: right;
+}
+
+.card-body {
+    text-align: right;
+}
+
+/* Icons - FontAwesome RTL Fix */
+.fa, .fas, .far, .fal, .fab {
+    margin-left: 5px;
+    margin-right: 0;
+}
+
+i + span,
+i + a {
+    margin-right: 5px;
+    margin-left: 0;
+}
+
+/* Slick Slider RTL */
+.slick-slider {
+    direction: rtl;
+}
+
+.slick-prev {
+    right: 25px;
+    left: auto;
+}
+
+.slick-next {
+    left: 25px;
+    right: auto;
+}
+
+/* Search Form */
+.search-px form,
+.sidebar__search {
+    direction: rtl;
+}
+
+.sidebar__search input {
+    padding-right: 40px;
+    padding-left: 10px;
+    text-align: right;
+}
+
+.sidebar__search button {
+    right: 10px;
+    left: auto;
+}
+
+/* Comments */
+.te-comments-item {
+    direction: rtl;
+}
+
+.te-comments-avatar {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.te-comments-text {
+    text-align: right;
+}
+
+/* Tables */
+table {
+    direction: rtl;
+}
+
+th, td {
+    text-align: right;
+}
+
+/* Modal */
+.modal-header .close {
+    margin-right: auto;
+    margin-left: 0;
+}
+
+/* Pagination */
+.pagination {
+    direction: rtl;
+}
+
+/* Blockquote */
+blockquote {
+    border-right: 4px solid #ddd;
+    border-left: none;
+    padding-right: 1rem;
+    padding-left: 0;
+}
+
+/* Responsive Text Alignment */
+@media (max-width: 767px) {
+    .text-md-left {
+        text-align: right !important;
+    }
+    
+    .text-md-right {
+        text-align: left !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .text-lg-left {
+        text-align: right !important;
+    }
+    
+    .text-lg-right {
+        text-align: left !important;
+    }
+}
+
+/* Fix for checkboxes and radios */
+.custom-control {
+    padding-right: 1.5rem;
+    padding-left: 0;
+}
+
+.custom-control-label::before,
+.custom-control-label::after {
+    right: -1.5rem;
+    left: auto;
+}
+
+/* Sidebar */
+.sidebar {
+    text-align: right;
+}
+
+.sidebar ul {
+    padding-right: 0;
+}
+
+.sidebar li {
+    text-align: right;
+}
+
+/* Footer */
+.footer {
+    text-align: right;
+}
+
+/* Menu Mobile */
+.mean-container .mean-nav {
+    text-align: right;
+}
+
+.mean-container .mean-nav ul li a {
+    text-align: right;
+    padding: 10px 5% 10px 0;
+}
+
+/* Additional Theme-Specific RTL Fixes */
+.section-title {
+    text-align: right;
+}
+
+.section-subtitle {
+    text-align: right;
+}
+
+/* Gallery & Portfolio */
+.portfolio-item {
+    text-align: right;
+}
+
+.gallery-item {
+    text-align: right;
+}
+
+/* Social Media Icons */
+.social-links {
+    text-align: right;
+}
+
+.social-links li {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Testimonials */
+.testimonial {
+    text-align: right;
+}
+
+.testimonial-author {
+    text-align: right;
+}
+
+/* Team Members */
+.team-member {
+    text-align: right;
+}
+
+/* Services */
+.service-item {
+    text-align: right;
+}
+
+/* Blog Posts */
+.post,
+.blog-post {
+    text-align: right;
+}
+
+.post-meta {
+    text-align: right;
+}
+
+.post-meta li {
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+/* Widget Areas */
+.widget {
+    text-align: right;
+}
+
+.widget ul {
+    padding-right: 0;
+}
+
+.widget li {
+    text-align: right;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    text-align: right;
+}
+
+/* Caption */
+.wp-caption {
+    text-align: right;
+}
+
+.wp-caption-text {
+    text-align: right;
+}
+
+/* ==================================
+   Theme-Specific RTL Enhancements
+   ================================== */
+
+/* Header & Navigation */
+.te-header-menu-area .menu-wrapper {
+    direction: rtl;
+}
+
+.te-main-menu ul {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.te-main-menu ul li {
+    float: right;
+    text-align: right;
+}
+
+.te-main-menu ul li a {
+    text-align: right;
+}
+
+.te-main-menu ul li ul.sub-menu {
+    right: 0;
+    left: auto;
+    text-align: right;
+}
+
+.te-main-menu ul li:hover > ul.sub-menu {
+    right: 0;
+    left: auto;
+}
+
+.te-logo {
+    text-align: right;
+}
+
+.te-header-btn {
+    margin-right: 30px;
+    margin-left: 0;
+}
+
+.te-mobile-menu-bar {
+    text-align: left !important;
+}
+
+/* Menu Sidebar */
+.te-menu-sidebar-area {
+    right: auto;
+    left: -370px;
+}
+
+.te-menu-sidebar-area.te-sidebar-opened {
+    right: auto;
+    left: 0;
+}
+
+.te-menu-sidebar-close {
+    text-align: left;
+}
+
+.te-header-contact-info span {
+    text-align: right;
+    display: block;
+}
+
+.te-header-contact-info span i {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Blog & Posts */
+.te-post-item {
+    text-align: right;
+}
+
+.te-post-title {
+    text-align: right;
+}
+
+.te-post-content {
+    text-align: right;
+}
+
+.te-post-meta {
+    text-align: right;
+}
+
+.te-post-meta span {
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.te-post-meta span:last-child {
+    margin-left: 0;
+}
+
+.te-post-meta i {
+    margin-left: 8px;
+    margin-right: 0;
+}
+
+.te-read-more {
+    text-align: right;
+}
+
+/* Blog Details */
+.te-blog-details-wrapper {
+    text-align: right;
+}
+
+/* Post Navigation */
+.te-blog-post-nav {
+    text-align: right;
+}
+
+.te-post-navigation {
+    text-align: right;
+}
+
+.theme-navigation.b-next-post {
+    text-align: right !important;
+}
+
+.theme-navigation span {
+    text-align: right;
+}
+
+.theme-navigation h4 {
+    text-align: right;
+}
+
+/* Comments */
+.te-post-comments {
+    text-align: right;
+}
+
+.te-comment-title {
+    text-align: right;
+}
+
+.te-comments-item {
+    text-align: right;
+}
+
+.te-comments-avatar {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.te-comments-text {
+    text-align: right;
+}
+
+.te-avatar-name {
+    text-align: right;
+}
+
+.te-avatar-name h5 {
+    text-align: right;
+}
+
+.te-avatar-name span {
+    text-align: right;
+}
+
+.te-comment-reply {
+    float: left;
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+/* Comment Form */
+.te-contacts-name input,
+.te-contacts-email input,
+.te-contacts-message textarea {
+    text-align: right;
+    direction: rtl;
+}
+
+/* Tags & Categories */
+.te-blog-post-tag {
+    text-align: right;
+}
+
+.te-blog-post-tag a {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Pagination */
+.te-basic-pagination {
+    text-align: center;
+    direction: rtl;
+}
+
+.te-basic-pagination ul {
+    padding-right: 0;
+}
+
+.te-basic-pagination ul li {
+    float: right;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Sidebar Widgets */
+.sidebar {
+    text-align: right;
+}
+
+.sidebar .widget {
+    text-align: right;
+}
+
+.sidebar .widget-title {
+    text-align: right;
+}
+
+.sidebar ul {
+    padding-right: 0;
+    text-align: right;
+}
+
+.sidebar ul li {
+    text-align: right;
+}
+
+.sidebar ul li a {
+    text-align: right;
+}
+
+.sidebar ul li::before {
+    right: 0;
+    left: auto;
+}
+
+/* Search Widget */
+.sidebar__search {
+    direction: rtl;
+}
+
+.sidebar__search input {
+    padding-right: 50px;
+    padding-left: 20px;
+    text-align: right;
+}
+
+.sidebar__search button {
+    right: 15px;
+    left: auto;
+}
+
+/* Footer */
+.footer-area {
+    text-align: right;
+}
+
+.footer-widget {
+    text-align: right;
+}
+
+.footer-widget-title {
+    text-align: right;
+}
+
+.footer-widget ul {
+    padding-right: 0;
+    text-align: right;
+}
+
+.footer-widget ul li {
+    text-align: right;
+}
+
+.footer-widget ul li a {
+    text-align: right;
+}
+
+.footer-widget ul li::before {
+    right: 0;
+    left: auto;
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.footer-social a {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+.footer-copyright {
+    text-align: right;
+}
+
+/* Error 404 Page */
+.error-item {
+    text-align: center;
+}
+
+.error-title {
+    text-align: center;
+}
+
+.error-content {
+    text-align: center;
+}
+
+/* Page Content */
+.tp-page-content {
+    text-align: right;
+}
+
+/* Single Post Elements */
+.te-single-post-meta {
+    text-align: right;
+}
+
+/* Biography */
+.te-author-box {
+    text-align: right;
+}
+
+.te-author-avatar {
+    float: right;
+    margin-left: 20px;
+    margin-right: 0;
+}
+
+.te-author-content {
+    text-align: right;
+}
+
+/* Quote Post Format */
+.te-post-quote {
+    text-align: right;
+    border-right: 4px solid;
+    border-left: none;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+/* Gallery Post Format */
+.te-post-gallery {
+    direction: rtl;
+}
+
+/* Mobile Menu */
+.te-mobile-nav-menu {
+    text-align: right;
+}
+
+.te-mobile-nav-menu ul {
+    padding-right: 0;
+}
+
+.te-mobile-nav-menu ul li {
+    text-align: right;
+}
+
+.te-mobile-nav-menu ul li a {
+    text-align: right;
+    padding: 10px 15px 10px 0;
+}
+
+.te-mobile-nav-menu ul li ul {
+    padding-right: 20px;
+}
+
+/* Social Profile */
+.te-social-profile {
+    text-align: right;
+}
+
+.te-social-profile a {
+    margin-left: 10px;
+    margin-right: 0;
+}
+
+/* Buttons */
+.te-quote-btn {
+    text-align: center;
+}
+
+.te-quote-btn i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+.te-theme-btn i {
+    margin-right: 10px;
+    margin-left: 0;
+}
+
+/* Link Animation */
+.link-anime {
+    text-align: center;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .te-menu {
+        display: none;
+    }
+    
+    .te-header-btn {
+        margin-right: 15px;
+    }
+    
+    .te-mobile-menu-bar {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .te-post-meta span {
+        margin-left: 15px;
+    }
+    
+    .te-comments-avatar {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .te-author-avatar {
+        float: none;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* Additional RTL Fixes for Lists */
+ul:not(.slick-dots) {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+/* Typography RTL */
+h1, h2, h3, h4, h5, h6 {
+    text-align: inherit;
+}
+
+/* Ensure all text inputs are RTL */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+textarea,
+select {
+    direction: rtl;
+    text-align: right;
+}
+
+/* WordPress Core Elements */
+.wp-block-quote {
+    border-right: 4px solid;
+    border-left: none;
+    padding-right: 1em;
+    padding-left: 0;
+}
+
+.wp-block-pullquote {
+    text-align: right;
+}
+
+/* Alignment Classes */
+.alignright {
+    float: left !important;
+    margin-left: 0 !important;
+    margin-right: 1.5em !important;
+}
+
+.alignleft {
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 1.5em !important;
+}
+
+.aligncenter {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+/* Screen Reader Text */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
